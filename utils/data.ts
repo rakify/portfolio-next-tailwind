@@ -83,7 +83,7 @@ export const backend: Skill[] = [
   },
 ];
 
-export const projects: TProject[] = [
+export const projectsData: TProject[] = [
   {
     id: 1,
     title: "Multi-vendor Ecommerce",
@@ -92,7 +92,7 @@ export const projects: TProject[] = [
     demo: "https://bestmart.vercel.app",
     date: "Jun 22, 2022 - Now",
     github: "https://github.com/rakify/ecommerce-site-mern-mui",
-    stack: [
+    stacks: [
       "React",
       "Firebase",
       "Redux Toolkit",
@@ -126,7 +126,7 @@ export const projects: TProject[] = [
       "it will show resulted ammount that customer is going to pay. Its super easy to use.",
     github: "https://github.com/rakify/business-tracker-next-firebase",
     date: "February 1, 2022 - Now",
-    stack: ["NextJS", "React", "Firebase", "Redux Toolkit", "MUI"],
+    stacks: ["NextJS", "React", "Firebase", "Redux Toolkit", "MUI"],
     category: ["react"],
     // screenshot: [
     //   {
@@ -162,7 +162,7 @@ export const projects: TProject[] = [
     desc: "mess meal tracker for people/students living together in a mess or hostel",
     github: "https://github.com/rakify/mess-meal-tracker",
     date: "November 7, 2021 - Completed",
-    stack: ["NextJS", "React", "Firebase", "Redux Toolkit", "MUI"],
+    stacks: ["NextJS", "React", "Firebase", "Redux Toolkit", "MUI"],
     category: ["react"],
   },
   {
@@ -174,7 +174,7 @@ export const projects: TProject[] = [
     date: "August 27, 2022 - Completed",
     desc: "This is an AI project. Its a voice controlled music app thanks to Alan AI and Youtube Api.",
     github: "",
-    stack: ["NextJS", "React", "Firebase", "Redux Toolkit", "MUI"],
+    stacks: ["NextJS", "React", "Firebase", "Redux Toolkit", "MUI"],
     category: ["react"],
   },
 ];

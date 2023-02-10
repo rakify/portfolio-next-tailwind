@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-image: url(/images/Texture.png);
-}
+  body {
+    font-family: sans-serif;
+    color: #354358;
+ }

@@ -21,7 +21,7 @@ export interface TProject {
   github: string;
   date: string;
   category: Category[];
-  stack: string[];
+  stacks: string[];
 }
 
 export type Category = "react" | "node" | "express" | "mongo";
