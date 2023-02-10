@@ -24,4 +24,4 @@ export interface TProject {
   stacks: string[];
 }
 
-export type Category = "react" | "node" | "express" | "mongo";
+export type Category = "react" | "node" | "express" | "mongo" | "firebase" | "next";
