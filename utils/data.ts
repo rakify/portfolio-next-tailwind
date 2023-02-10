@@ -1,94 +1,85 @@
-import { RiComputerLine } from "react-icons/ri";
-import { FaServer } from "react-icons/fa";
-import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
-import { MdDeveloperMode } from "react-icons/md";
+import { FaReact, FaServer, FaLaptopCode } from "react-icons/fa";
+import { SiFastapi } from "react-icons/si";
 import { TProject, Service, Skill } from "./interface";
 
 import { BsCircleFill } from "react-icons/bs";
 
 export const services: Service[] = [
   {
-    Icon: RiComputerLine,
+    Icon: FaReact,
     title: "Frontend Development",
     about:
-      "I can build a beautiful and scalable web app using <b>React.js</b> ",
+      "I can build a  visually stunning and highly scalable web application using <b>React.js</b> & <b>Next.js</b>.",
   },
   {
     Icon: FaServer,
     title: "Backend  Development",
-    about: "handle database, server, api using <b>Express.js </b>",
-  },
-  {
-    Icon: AiOutlineApi,
-    title: "API Development",
-    about: "I can develop REST API using <b>Node.js</b> ",
-  },
-  {
-    Icon: MdDeveloperMode,
-    title: "Competitive Coder",
-    about: "a daily problem solver in <b>Codeforces</b>  and <b>Atcoder</b> ",
-  },
-  {
-    Icon: RiComputerLine,
-    title: "Whatever",
     about:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!",
+      "I am equipped to leverage the full potential of <b>Express.js</b> to create a high-performance, reliable, and secure web infrastructure.",
+  },
+  {
+    Icon: SiFastapi,
+    title: "API Development",
+    about:
+      "I am capable of designing and implementing a scalable and efficient REST API with <b>Node.js</b>.",
+  },
+  {
+    Icon: FaLaptopCode,
+    title: "Competitive Coder",
+    about:
+      "I have honed my problem-solving skills through daily engagement in <b>Codeforces</b>, <b>Atcoder</b> and <b>Codechef</b>.",
   },
 ];
 
-export const languages: Skill[] = [
+export const frontend: Skill[] = [
   {
     Icon: BsCircleFill,
-    name: "Python",
-    level: "45",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Java Script",
-    level: "60",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "React Native",
+    name: "React",
     level: "80",
   },
   {
     Icon: BsCircleFill,
-    name: "React",
+    name: "Next",
+    level: "50",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Typescript",
+    level: "50",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Redux Toolkit",
+    level: "90",
+  },
+
+  {
+    Icon: BsCircleFill,
+    name: "Tailwind",
     level: "70",
   },
   {
     Icon: BsCircleFill,
-    name: "Django",
-    level: "80",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Bootstrap",
+    name: "MUI",
     level: "80",
   },
 ];
 
-export const tools: Skill[] = [
+export const backend: Skill[] = [
   {
     Icon: BsCircleFill,
-    name: "Figma",
-    level: "85",
+    name: "Node/Express",
+    level: "80",
   },
   {
     Icon: BsCircleFill,
-    name: "Photoshop",
-    level: "45",
+    name: "MongoDB",
+    level: "70",
   },
   {
     Icon: BsCircleFill,
-    name: "Illustrator",
-    level: "60",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Framer",
-    level: "45",
+    name: "GIT",
+    level: "80",
   },
 ];
 
@@ -135,7 +126,7 @@ export const projects: TProject[] = [
       "it will show resulted ammount that customer is going to pay. Its super easy to use.",
     github: "https://github.com/rakify/business-tracker-next-firebase",
     date: "February 1, 2022 - Now",
-    stack: ["NextJS","React","Firebase","Redux Toolkit","MUI"],
+    stack: ["NextJS", "React", "Firebase", "Redux Toolkit", "MUI"],
     category: ["react"],
     // screenshot: [
     //   {
@@ -171,7 +162,7 @@ export const projects: TProject[] = [
     desc: "mess meal tracker for people/students living together in a mess or hostel",
     github: "https://github.com/rakify/mess-meal-tracker",
     date: "November 7, 2021 - Completed",
-    stack: ["NextJS","React","Firebase","Redux Toolkit","MUI"],
+    stack: ["NextJS", "React", "Firebase", "Redux Toolkit", "MUI"],
     category: ["react"],
   },
   {
@@ -183,7 +174,7 @@ export const projects: TProject[] = [
     date: "August 27, 2022 - Completed",
     desc: "This is an AI project. Its a voice controlled music app thanks to Alan AI and Youtube Api.",
     github: "",
-    stack: ["NextJS","React","Firebase","Redux Toolkit","MUI"],
+    stack: ["NextJS", "React", "Firebase", "Redux Toolkit", "MUI"],
     category: ["react"],
   },
 ];

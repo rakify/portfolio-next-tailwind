@@ -12,7 +12,7 @@ const NavItem: FC<{
     <Link href={route} legacyBehavior>
       <a>
         <span
-          className="mx-2 cursor-pointer hover:border-b-4 hover:text-green"
+          className="mx-2 cursor-pointer text-lg font-medium hover:text-[#59b256]"
           onClick={() => setActive(name)}
         >
           {name}
@@ -35,7 +35,7 @@ const Navbar = () => {
 
   return (
     <div className="flex items-center justify-between px-5 py-3 my-3">
-      <span className="text-xl font-bold border-b-4 md:text-2xl border-green">
+      <span className="text-xl font-bold border-b-4 md:text-2xl border-[#59b256]">
         {active}
       </span>
 

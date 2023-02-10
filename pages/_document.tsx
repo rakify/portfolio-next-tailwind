@@ -11,7 +11,7 @@ export default function Document() {
           rel="stylesheet"
         />
       </Head>
-      <body className="bg-[url(/images/Texture.png)] bg-repeat">
+      <body className="bg-[url(/images/Texture.png)] bg-repeat bg-slate-400">
         <Main />
         <NextScript />
       </body>
