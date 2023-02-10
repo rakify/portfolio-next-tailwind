@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
@@ -9,6 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <Sidebar />
       </div>
       <div className="col-span-12 lg:col-span-9">
+        <Navbar />
         <Component {...pageProps} />
       </div>
     </div>
