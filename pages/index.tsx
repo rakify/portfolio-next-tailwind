@@ -1,13 +1,17 @@
-import {
-  NextPage,
-} from "next";
+import { NextPage } from "next";
+import { motion } from "framer-motion";
+
 import Services from "../components/Services";
 import { services } from "../utils/data";
 
 const About: NextPage = () => {
-
   return (
-    <div className="flex flex-col flex-grow px-6 pt-1 ">
+    <motion.div
+      className="flex flex-col flex-grow px-6 pt-1 box "
+      initial={{ x: "-300px", opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      exit={{ y: "-300px", opacity: 0 }}
+    >
       <h6 className="my-3 text-base font-medium">
         Last 3 years I have spent most of my time learning Algorithms, Data
         Structure and doing competitive programming and for a year I have spent
@@ -36,7 +40,7 @@ const About: NextPage = () => {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default About;

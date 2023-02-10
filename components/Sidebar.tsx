@@ -12,7 +12,7 @@ import { useTheme } from "next-themes";
 
 const Sidebar = () => {
   const { theme, setTheme } = useTheme();
-  console.log(theme)
+  console.log(theme);
 
   const changeTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
@@ -30,7 +30,7 @@ const Sidebar = () => {
       <h3 className="my-4 text-4xl font-bold tracking-widest text-center font-jose">
         Rakib Miah
       </h3>
-      <p className="px-2 py-1 my-3 text-center rounded-full bg-gray-200 dark:bg-black-500 text-[#59b256] font-bold">
+      <p className="px-2 py-1 my-3 flex items-center justify-center rounded-full bg-gray-200 dark:bg-black-500 text-[#59b256] font-jose tracking-wide text-2xl">
         Web Developer
       </p>
 
@@ -54,15 +54,15 @@ const Sidebar = () => {
       </div>
 
       {/* Contacts */}
-      <div className="py-4 my-5 bg-gray-200 dark:bg-dark-200 dark:bg-black-500">
-        <div className="flex items-center justify-center">
+      <div className="py-4 my-5 bg-gray-200 dark:bg-dark-200">
+        <div className="flex items-center justify-evenly">
           <FaAddressCard className="mr-2" /> <span>Dhaka, Bangladesh</span>
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-evenly">
           <MdEmail className="mr-2" /> irakibm@gmail.com
         </div>
-        <div className="flex items-center justify-center">
-          <FaPhone className="mr-2" /> 01580841319
+        <div className="flex items-center justify-evenly">
+          <FaPhone className="mr-4" /> +8801580841319
         </div>
       </div>
 

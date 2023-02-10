@@ -26,6 +26,7 @@ const ProjectsNavbar: FC<{
       <NavItem value="react" {...props} />
       <NavItem value="mongo" {...props} />
       <NavItem value="node" {...props} />
+      <NavItem value="firebase" {...props} />
     </div>
   );
 };

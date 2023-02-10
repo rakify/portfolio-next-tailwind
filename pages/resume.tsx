@@ -1,10 +1,15 @@
-// import Bar from "../components/Bar";
 import Bar from "@/components/Bar";
+import { motion } from "framer-motion";
 import { backend, frontend } from "../utils/data";
 
 const Resume = () => {
   return (
-    <div className="px-6 py-2">
+    <motion.div
+      className="px-6 py-2 box"
+      initial={{ x: "-100px", opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      exit={{ y: "-100px", opacity: 0 }}
+    >
       {/* //! Education & Experience */}
       <div className="grid gap-6 md:grid-cols-2">
         <div>
@@ -42,7 +47,7 @@ const Resume = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

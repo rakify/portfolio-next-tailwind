@@ -9,7 +9,7 @@ export const services: Service[] = [
     Icon: FaReact,
     title: "Frontend Development",
     about:
-      "I can build a  visually stunning and highly scalable web application using <b>React.js</b> & <b>Next.js</b>.",
+      "I can build a  visually stunning and highly scalable web application using <b>React.js</b> and <b>Next.js</b>.",
   },
   {
     Icon: FaServer,
@@ -25,7 +25,7 @@ export const services: Service[] = [
   },
   {
     Icon: FaLaptopCode,
-    title: "Competitive Coder",
+    title: "Competitive Programmer",
     about:
       "I have honed my problem-solving skills through daily engagement in <b>Codeforces</b>, <b>Atcoder</b> and <b>Codechef</b>.",
   },
@@ -36,16 +36,6 @@ export const frontend: Skill[] = [
     Icon: BsCircleFill,
     name: "React",
     level: "80",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Next",
-    level: "50",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Typescript",
-    level: "50",
   },
   {
     Icon: BsCircleFill,
@@ -62,6 +52,16 @@ export const frontend: Skill[] = [
     Icon: BsCircleFill,
     name: "MUI",
     level: "80",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Next",
+    level: "50",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Typescript",
+    level: "50",
   },
 ];
 
