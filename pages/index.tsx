@@ -12,7 +12,7 @@ const About: NextPage = () => {
         Last 3 years I have spent most of my time learning Algorithms, Data
         Structure and doing competitive programming and for a year I have spent
         my time learning JavaScript Framework and Library. I can build web apps
-        using MERN stack, Nextjs and mobile apps using React Native. I'm
+        using MERN stack, Nextjs and mobile apps using React Native. I am
         currently available to collaborate on any web development project or
         react native project.
       </h6>
