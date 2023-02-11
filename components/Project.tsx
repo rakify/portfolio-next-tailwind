@@ -4,6 +4,7 @@ import { MdClose } from "react-icons/md";
 import { TProject } from "../utils/interface";
 
 import Image from "next/image";
+import Head from "next/head";
 
 const ProjectCard: FC<{
   project: TProject;
@@ -28,19 +29,23 @@ const ProjectCard: FC<{
             <Image src={img} alt={title} height="150" width="300" />
             <div className="flex justify-center my-4 space-x-3">
               <a
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
                 href={github}
                 className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
               >
                 <AiFillGithub /> <span>Github</span>
               </a>
-              <a
-                target="_blank" rel="noreferrer"
-                href={demo}
-                className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
-              >
-                <AiFillProject /> <span>Project</span>
-              </a>
+              {demo !== "" && (
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href={demo}
+                  className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
+                >
+                  <AiFillProject /> <span>Demo</span>
+                </a>
+              )}
             </div>
           </div>
 

@@ -63,6 +63,11 @@ export const frontend: Skill[] = [
     name: "Typescript",
     level: "50",
   },
+  {
+    Icon: BsCircleFill,
+    name: "GraphQL",
+    level: "50",
+  },
 ];
 
 export const backend: Skill[] = [
@@ -116,7 +121,7 @@ export const projectsData: TProject[] = [
   },
   {
     id: 2,
-    title: "Business Tracker",
+    title: "Btracker - Business Tracker",
     slug: "Business-Tracker",
     img: "https://i.ibb.co/sF3kddM/btracker-vercel-app-2022-12-21-21-38-35.png",
     demo: "https://btracker.vercel.app/",
@@ -159,7 +164,7 @@ export const projectsData: TProject[] = [
 
   {
     id: 3,
-    title: "Mess Meal Tracker",
+    title: "Eumess - Mess Meal Tracker",
     slug: "Mess-Meal-Tracker",
     img: "https://i.ibb.co/ftQq96H/eumess-vercel-app-2022-7-2022-12-21-21-42-52.png",
     demo: "https://eumess.vercel.app/",
@@ -183,14 +188,14 @@ export const projectsData: TProject[] = [
   },
   {
     id: 4,
-    title: "Music App",
+    title: "Music Player AI",
     slug: "Music-App",
     img: "https://i.ibb.co/X3J33S5/alan-player-2022-12-21-21-50-35.png",
     demo: "",
     date: "August 27, 2022 - Completed",
-    desc: "This is an AI project. Its a voice controlled music app thanks to Alan AI and Youtube Api.",
-    github: "",
-    stacks: ["ReactJS", "ExpressJS", "NodeJS", "Axios"],
+    desc: "This is an AI project. Its a voice controlled music app thanks to Alan AI and Youtube Api. Using this you can search, play, pause, change, download, stop playing songs also can create a playlist and play them one by one, all by using voice command.",
+    github: "https://github.com/rakify/music-app-alan-ai",
+    stacks: ["ReactJS", "ExpressJS", "NodeJS", "Axios", "AlanAI"],
     category: ["react", "express", "node"],
   },
 ];

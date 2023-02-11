@@ -4,6 +4,7 @@ import Project from "../components/Project";
 import ProjectNavbar from "../components/ProjectNavbar";
 import { projectsData } from "../utils/data";
 import { Category } from "../utils/interface";
+import Head from "next/head";
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -44,6 +45,16 @@ const Projects = () => {
   };
 
   return (
+    <>
+    <Head>
+      <title>Rakib Miah - Projects I have recently worked on</title>
+      <meta
+        name="description"
+        content="These are some of the projects I have worked on recently. Hi! I am Rakib Miah. Passionate about Javascript library and framework. Over 1 year of development experience in HTML, CSS, JS, React and NextJS frameworks and  backend dev. Have an exciting project you need help with? Send me an email or call me directly!"
+      />
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
+
     <motion.ul
       className="container"
       variants={container}
@@ -68,7 +79,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
-    </motion.ul>
+    </motion.ul></>
   );
 };
 
