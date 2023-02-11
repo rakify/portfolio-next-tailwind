@@ -24,6 +24,7 @@ const ProjectsNavbar: FC<{
     <div className="flex px-3 py-2 space-x-3 overflow-x-auto list-none">
       <NavItem value="all" {...props} />
       <NavItem value="react" {...props} />
+      <NavItem value="next" {...props} />
       <NavItem value="mongo" {...props} />
       <NavItem value="node" {...props} />
       <NavItem value="firebase" {...props} />

@@ -34,18 +34,18 @@ export const services: Service[] = [
 export const frontend: Skill[] = [
   {
     Icon: BsCircleFill,
-    name: "React",
+    name: "ReactJS",
     level: "80",
   },
   {
     Icon: BsCircleFill,
-    name: "Redux Toolkit",
+    name: "ReduxToolkit",
     level: "90",
   },
 
   {
     Icon: BsCircleFill,
-    name: "Tailwind",
+    name: "TailwindCSS",
     level: "70",
   },
   {
@@ -55,7 +55,7 @@ export const frontend: Skill[] = [
   },
   {
     Icon: BsCircleFill,
-    name: "Next",
+    name: "NextJS",
     level: "50",
   },
   {
@@ -68,7 +68,12 @@ export const frontend: Skill[] = [
 export const backend: Skill[] = [
   {
     Icon: BsCircleFill,
-    name: "Node/Express",
+    name: "NodeJS",
+    level: "80",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "ExpressJS",
     level: "80",
   },
   {
@@ -86,8 +91,8 @@ export const backend: Skill[] = [
 export const projectsData: TProject[] = [
   {
     id: 1,
-    title: "Multi-vendor Ecommerce",
-    slug: "Multi-vendor-Ecommerce",
+    title: "Bestmart - Multi-vendor Ecommerce Web App",
+    slug: "multi-vendor-ecommerce",
     img: "https://i.ibb.co/8XZw2NP/screencapture-ecommerce-client-rakify-vercel-app-2022-12-26-23-01-52.png",
     demo: "https://bestmart.vercel.app",
     date: "Jun 22, 2022 - Now",
@@ -107,7 +112,7 @@ export const projectsData: TProject[] = [
       "JsonWebToken",
     ],
     category: ["react", "express", "firebase", "mongo", "node"],
-    desc: "This is a multi vendor MERN full stack ecommerce web app project. It contains total 3 folders. one for api, one frontend for sellers/customers and another frontend for admin panel.",
+    desc: "This is a multi vendor MERN full stack ecommerce web app project. It contains total 3 parts. one for api, one frontend for sellers/customers and another frontend for admin panel. This project is currently live. Please check github for more information.",
   },
   {
     id: 2,
