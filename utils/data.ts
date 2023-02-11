@@ -9,25 +9,25 @@ export const services: Service[] = [
     Icon: FaReact,
     title: "Frontend Development",
     about:
-      "I can build a  visually stunning and highly scalable web application using <b>React.js</b> and <b>Next.js</b>.",
+      "Capable of building a  visually stunning and highly scalable web application using <b>React.js</b> and <b>Next.js</b>.",
   },
   {
     Icon: FaServer,
     title: "Backend  Development",
     about:
-      "I am equipped to leverage the full potential of <b>Express.js</b> to create a high-performance, reliable, and secure web infrastructure.",
+      "Equipped to leverage the full potential of <b>Express.js</b> to create a high-performance, reliable, and secure web infrastructure.",
   },
   {
     Icon: SiFastapi,
     title: "API Development",
     about:
-      "I am capable of designing and implementing a scalable and efficient REST API with <b>Node.js</b>.",
+      "Capable of designing and implementing a scalable and efficient REST API with <b>Node.js</b>.",
   },
   {
     Icon: FaLaptopCode,
     title: "Competitive Programmer",
     about:
-      "I have honed my problem-solving skills through daily engagement in <b>Codeforces</b>, <b>Atcoder</b> and <b>Codechef</b>.",
+      "Honed my problem-solving skills through daily engagement in <b>Codeforces</b>, <b>Atcoder</b> and <b>Codechef</b>.",
   },
 ];
 
