@@ -45,19 +45,31 @@ const Resume = () => {
           </p>
           <div className="flex flex-row">
             <p className="font-semibold pr-1">Codeforces: </p>
-            <a href="https://codeforces.com/profile/RakibMiah" target="_blank">
+            <a
+              href="https://codeforces.com/profile/RakibMiah"
+              target="_blank"
+              rel="noreferrer"
+            >
               https://codeforces.com/profile/RakibMiah
             </a>
           </div>
           <div className="flex flex-row">
             <p className="font-semibold pr-1">Atcoder: </p>
-            <a href="https://atcoder.com/users/RakibMiah" target="_blank">
+            <a
+              href="https://atcoder.com/users/RakibMiah"
+              target="_blank"
+              rel="noreferrer"
+            >
               https://atcoder.com/users/RakibMiah
             </a>
           </div>{" "}
           <div className="flex flex-row">
             <p className="font-semibold pr-1">Codechef: </p>
-            <a href="https://www.codechef.com/users/rakibmiah" target="_blank">
+            <a
+              href="https://www.codechef.com/users/rakibmiah"
+              target="_blank"
+              rel="noreferrer"
+            >
               https://www.codechef.com/users/rakibmiah
             </a>
           </div>
