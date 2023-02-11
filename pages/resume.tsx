@@ -25,10 +25,10 @@ const Resume = () => {
             <h5 className="my-3 text-2xl font-bold border-b-4">
               Programming Skills
             </h5>
-            <p className="font-thin">
+            <h6 className="my-3 text-base font-medium">
               Participated in 140+ online programming competitions and Solved
               More Than 400 Problems.
-            </p>
+            </h6>
             <div className="flex flex-row">
               <p className="font-semibold pr-1">Codeforces: </p>
               <a
@@ -36,7 +36,7 @@ const Resume = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                https://codeforces.com/profile/RakibMiah
+                View Profile
               </a>
             </div>
             <div className="flex flex-row">
@@ -46,7 +46,7 @@ const Resume = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                https://atcoder.com/users/RakibMiah
+                View Profile
               </a>
             </div>{" "}
             <div className="flex flex-row">
@@ -56,7 +56,7 @@ const Resume = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                https://www.codechef.com/users/rakibmiah
+                View Profile
               </a>
             </div>
           </div>
@@ -95,13 +95,13 @@ const Resume = () => {
               <h5 className="my-2 text-xl font-bold">
                 BSc in Computer Science Engineering
               </h5>
-              <p className="font-thin">- Eastern University (2019-2023)</p>
+              <p className="font-medium">- Eastern University (2019-2023)</p>
             </div>
             <div className="">
               <h5 className="my-2 text-xl font-bold">
                 Higher Secondary Certificate
               </h5>
-              <p className="font-thin">
+              <p className="font-medium">
                 - Narsingdi Science College (2014-2016)
               </p>
             </div>
@@ -109,7 +109,7 @@ const Resume = () => {
               <h5 className="my-2 text-xl font-bold">
                 Secondary School Certificate
               </h5>
-              <p className="font-thin">- Chaitanya High School (2004-2014)</p>
+              <p className="font-medium">- Chaitanya High School (2004-2014)</p>
             </div>
           </div>
         </div>
