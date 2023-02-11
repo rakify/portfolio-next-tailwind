@@ -1,0 +1,7 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+Host: https://devrakib.vercel.app/
+
+Sitemap: https://fardin-me.vercel.app/sitemap.xml

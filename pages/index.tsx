@@ -10,6 +10,7 @@ const About: NextPage = () => {
     <>
       <Head>
         <title>Rakib Miah - Portfolio</title>
+        <meta name="google-site-verification" content="BcYnjNH5zbRhIy9Ti23uSoV7Vpn-6selgYPdiwkvtss" />
         <meta
           name="description"
           content="I am Rakib Miah. Passionate about Javascript library and framework. Over 1 year of development experience in HTML, CSS, JS, React and NextJS frameworks and  backend dev. Have an exciting project you need help with? Send me an email or call me directly!"
