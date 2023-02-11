@@ -4,4 +4,4 @@ Allow: /
 
 Host: https://devrakib.vercel.app/
 
-Sitemap: https://fardin-me.vercel.app/sitemap.xml
+Sitemap: https://devrakib.vercel.app/sitemap.xml
