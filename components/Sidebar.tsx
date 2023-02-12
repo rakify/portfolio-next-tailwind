@@ -1,5 +1,5 @@
 import Image from "next/image";
-import pic from "../public/images/Rakib.png";
+import pic from "../public/images/Rakib.jpg";
 import {
   FaAddressCard,
   FaPhone,
