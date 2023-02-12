@@ -36,7 +36,7 @@ const Resume = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                View Profile
+                Codeforces/RakibMiah
               </a>
             </div>
             <div className="flex flex-row">
@@ -46,7 +46,7 @@ const Resume = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                View Profile
+                Atcoder/RakibMiah
               </a>
             </div>{" "}
             <div className="flex flex-row">
@@ -56,7 +56,7 @@ const Resume = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                View Profile
+                Codechef/rakibmiah
               </a>
             </div>
           </div>
