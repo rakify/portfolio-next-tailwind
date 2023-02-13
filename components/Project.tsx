@@ -29,7 +29,7 @@ const ProjectCard: FC<{
         <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100">
           <div>
             <Image src={img} alt={title} height="150" width="300" />
-            <div className="flex justify-center my-4 space-x-3">
+            <div className="flex justify-evenly my-4 space-x-3">
               <a
                 target="_blank"
                 rel="noreferrer"
