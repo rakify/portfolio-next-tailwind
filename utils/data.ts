@@ -207,7 +207,7 @@ export const projectsData: TProject[] = [
       "React Navigations",
       "Axios",
     ],
-    category: ["react", "reactNative"],
+    category: ["reactNative"],
   },
 
   {
