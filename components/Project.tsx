@@ -8,7 +8,9 @@ import Head from "next/head";
 
 const ProjectCard: FC<{
   project: TProject;
-}> = ({ project: { title, img, category, demo, desc, github, stacks } }) => {
+}> = ({
+  project: { title, img, category, date, demo, desc, github, stacks },
+}) => {
   const [showDetail, setShowDetail] = useState(false);
 
   return (
@@ -53,6 +55,9 @@ const ProjectCard: FC<{
             <h2 className="mb-3 text-xl font-medium md:font-bold md:text-3xl">
               {title}
             </h2>
+            <div className="flex flex-wrap mb-5 space-x-2 text-sm font-thin tracking-wider">
+              {date}
+            </div>
             <h3 className="mb-3 font-medium">{desc}</h3>
             <p className="text-xl font-medium tracking-wide">Stacks</p>
             <div className="flex flex-wrap mt-5 space-x-2 text-sm tracking-wider">

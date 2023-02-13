@@ -39,6 +39,16 @@ export const frontend: Skill[] = [
   },
   {
     Icon: BsCircleFill,
+    name: "NextJS",
+    level: "50",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "React Native",
+    level: "70",
+  },
+  {
+    Icon: BsCircleFill,
     name: "ReduxToolkit",
     level: "90",
   },
@@ -52,11 +62,6 @@ export const frontend: Skill[] = [
     Icon: BsCircleFill,
     name: "MUI",
     level: "80",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "NextJS",
-    level: "50",
   },
   {
     Icon: BsCircleFill,
@@ -100,7 +105,7 @@ export const projectsData: TProject[] = [
     slug: "multi-vendor-ecommerce",
     img: "https://i.ibb.co/8XZw2NP/screencapture-ecommerce-client-rakify-vercel-app-2022-12-26-23-01-52.png",
     demo: "https://bestmart.vercel.app",
-    date: "Jun 22, 2022 - Now",
+    date: "Jun 22, 2022 - Finished",
     github: "https://github.com/rakify/ecommerce-site-mern-mui",
     stacks: [
       "ReactJS",
@@ -134,7 +139,7 @@ export const projectsData: TProject[] = [
       "It will also ask for customers previous due and todays reserve and based on all input" +
       "it will show resulted ammount that customer is going to pay. Its super easy to use.",
     github: "https://github.com/rakify/business-tracker-next-firebase",
-    date: "February 1, 2022 - Now",
+    date: "February 1, 2022 - Finished",
     stacks: ["NextJS", "Firebase", "Redux Toolkit", "MUI", "Axios"],
     category: ["next", "firebase"],
     // screenshot: [
@@ -161,7 +166,6 @@ export const projectsData: TProject[] = [
     //   },
     // ],
   },
-
   {
     id: 3,
     title: "Eumess - Mess Meal Tracker",
@@ -170,7 +174,7 @@ export const projectsData: TProject[] = [
     demo: "https://eumess.vercel.app/",
     desc: "mess meal tracker for people/students living together in a mess or hostel",
     github: "https://github.com/rakify/mess-meal-tracker",
-    date: "November 7, 2021 - Completed",
+    date: "November 7, 2021 - Finished",
     stacks: [
       "ReactJS",
       "Redux toolkit",
@@ -188,11 +192,31 @@ export const projectsData: TProject[] = [
   },
   {
     id: 4,
+    title: "Meal Tracker - Android Version",
+    slug: "Meal-Tracker",
+    img: "https://i.ibb.co/3cP271s/MT-Homescreen.png",
+    demo: "https://drive.google.com/drive/folders/1_K6rm0eYD6U8XplUy2mjTXkQaq3_KIf0?usp=sharing",
+    desc: "This is react native version of previous mess meal tracker web app. Mess meal tracker is for people/students living together in a mess or hostel",
+    github: "https://github.com/rakify/meal-tracker-react-native",
+    date: "February 17, 2022 - Finished",
+    stacks: [
+      "React Native",
+      "ReactJS",
+      "Redux toolkit",
+      "Async Storage",
+      "React Navigations",
+      "Axios",
+    ],
+    category: ["react", "reactNative"],
+  },
+
+  {
+    id: 5,
     title: "Music Player AI",
     slug: "Music-App",
     img: "https://i.ibb.co/X3J33S5/alan-player-2022-12-21-21-50-35.png",
     demo: "",
-    date: "August 27, 2022 - Completed",
+    date: "August 27, 2022 - Finished",
     desc: "This is an AI project. Its a voice controlled music app thanks to Alan AI and Youtube Api. Using this you can search, play, pause, change, download, stop playing songs also can create a playlist and play them one by one, all by using voice command.",
     github: "https://github.com/rakify/music-app-alan-ai",
     stacks: ["ReactJS", "ExpressJS", "NodeJS", "Axios", "AlanAI"],

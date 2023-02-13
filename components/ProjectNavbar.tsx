@@ -28,6 +28,7 @@ const ProjectsNavbar: FC<{
       <NavItem value="mongo" {...props} />
       <NavItem value="node" {...props} />
       <NavItem value="firebase" {...props} />
+      <NavItem value="reactNative" {...props} />
     </div>
   );
 };

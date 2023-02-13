@@ -12,7 +12,7 @@ export interface Skill {
 }
 
 export interface TProject {
-  id: number,
+  id: number;
   title: string;
   slug: string;
   desc: string;
@@ -24,4 +24,11 @@ export interface TProject {
   stacks: string[];
 }
 
-export type Category = "react" | "node" | "express" | "mongo" | "firebase" | "next";
+export type Category =
+  | "react"
+  | "node"
+  | "express"
+  | "mongo"
+  | "firebase"
+  | "next"
+  | "reactNative";
