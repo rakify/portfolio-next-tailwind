@@ -66,7 +66,7 @@ const Resume = () => {
         <div className="grid gap-9">
           <div>
             <h5 className="my-3 text-2xl font-bold border-b-4">Tech Skills</h5>
-            <div className="my-2 flex flex-row flex-wrap gap-[10px] justify-between">
+            <div className="my-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-[5px]">
               {frontend.map((f, i) => (
                 <p
                   className="bg-[#36454f] text-white pr-1 pl-1 text-center"
