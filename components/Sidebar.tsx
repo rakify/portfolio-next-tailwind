@@ -12,7 +12,6 @@ import { useTheme } from "next-themes";
 
 const Sidebar = () => {
   const { theme, setTheme } = useTheme();
-  console.log(theme);
 
   const changeTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
