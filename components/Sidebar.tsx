@@ -18,18 +18,18 @@ const Sidebar = () => {
   };
   return (
     <>
-      <Image
+      {/* <Image
         src={pic}
         alt="Picture of Rakib"
         className="mx-auto border rounded-full "
         height={128}
         width={128}
         quality="100"
-      />
+      /> */}
       <h3 className="my-4 text-4xl font-bold tracking-widest text-center font-jose">
         Rakib Miah
       </h3>
-      <p className="px-2 py-1 my-3 flex items-center justify-center rounded-full bg-gray-200 dark:bg-dark-500 text-[#59b256] font-jose tracking-wide text-2xl">
+      <p className="px-2 py-1 my-3 flex items-center justify-center rounded-full bg-gray-200 dark:bg-gray text-[#59b256] font-jose tracking-wide text-2xl">
         Web Developer
       </p>
 
@@ -53,7 +53,7 @@ const Sidebar = () => {
       </div>
 
       {/* Contacts */}
-      <div className="py-4 my-5 bg-gray-200 dark:bg-dark-200">
+      <div className="py-4 my-5 bg-gray-200 dark:bg-gray-100">
         <div className="flex items-center justify-evenly">
           <FaAddressCard className="mr-2" /> <span>Dhaka, Bangladesh</span>
         </div>
@@ -68,7 +68,7 @@ const Sidebar = () => {
       {/* Bottom */}
       <div className="flex flex-col items-center justify-center">
         <button
-          className="w-8/12 py-2 text-white bg-black rounded-full cursor-pointer bg-gradient-to-r from-cyan-400 to-blue-500 dark:bg-gradient-to-r dark:from-gray-400 dark:to-dark-500 hover:scale-105 focus:outline-none"
+          className="w-8/12 py-2 text-white bg-black rounded-full cursor-pointer bg-gradient-to-r from-cyan-400 to-blue-500 dark:bg-gradient-to-r dark:from-gray-400 dark:to-gray-100 hover:scale-105 focus:outline-none transition-all duration-300"
           onClick={() =>
             window.open(
               "https://drive.google.com/file/d/1CuuvKfLShvz64mWvqpheIcaSAsQ8LP-T/view"
@@ -80,7 +80,7 @@ const Sidebar = () => {
 
         <button
           onClick={changeTheme}
-          className="w-8/12 py-2 my-4 text-white rounded-full cursor-pointer bg-gradient-to-r from-cyan-400 to-blue-500 dark:bg-gradient-to-r dark:from-gray-400 dark:to-dark-500 focus:outline-none hover:scale-105 "
+          className="w-8/12 py-2 my-4 text-white rounded-full cursor-pointer bg-gradient-to-r from-cyan-400 to-blue-500 dark:bg-gradient-to-r dark:from-gray-400 dark:to-gray-100 focus:outline-none hover:scale-105  transition-all duration-300"
         >
           Toggle Theme
         </button>

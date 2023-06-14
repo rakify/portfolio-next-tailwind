@@ -46,40 +46,41 @@ const Projects = () => {
 
   return (
     <>
-    <Head>
-      <title>Rakib Miah - Projects I have recently worked on</title>
-      <meta
-        name="description"
-        content="These are some of the projects I have worked on recently. Hi! I am Rakib Miah. Passionate about Javascript library and framework. Over 1 year of development experience in HTML, CSS, JS, React and NextJS frameworks and  backend dev. Have an exciting project you need help with? Send me an email or call me directly!"
-      />
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-
-    <motion.ul
-      className="container"
-      variants={container}
-      initial="hidden"
-      animate="visible"
-    >
-      <div className="px-5 py-2 overflow-y-scroll" style={{ height: "65vh" }}>
-        <ProjectNavbar
-          handlerFilterCategory={handlerFilterCategory}
-          active={active}
+      <Head>
+        <title>Rakib Miah - Projects I have recently worked on</title>
+        <meta
+          name="description"
+          content="These are some of the projects I have worked on recently. Hi! I am Rakib Miah. Passionate about Javascript library and framework. Over 1 year of development experience in HTML, CSS, JS, React and NextJS frameworks and  backend dev. Have an exciting project you need help with? Send me an email or call me directly!"
         />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-        <div className="relative grid grid-cols-12 gap-4 my-3">
-          {projects.map((project) => (
-            <motion.li
-              key={project.id}
-              className="col-span-12 p-2 bg-[honeydew] rounded-lg item sm:col-span-6 lg:col-span-4 dark:bg-dark-200"
-              variants={item}
-            >
-              <Project project={project} />
-            </motion.li>
-          ))}
+      <motion.ul
+        className="container"
+        variants={container}
+        initial="hidden"
+        animate="visible"
+      >
+        <div className="px-5 py-2 overflow-y-scroll" style={{ height: "65vh" }}>
+          <ProjectNavbar
+            handlerFilterCategory={handlerFilterCategory}
+            active={active}
+          />
+
+          <div className="relative grid grid-cols-12 gap-4 my-3">
+            {projects.map((project) => (
+              <motion.li
+                key={project.id}
+                className="col-span-12 p-2 bg-[honeydew] rounded-lg item sm:col-span-6 lg:col-span-4 dark:bg-gray-100"
+                variants={item}
+              >
+                <Project project={project} />
+              </motion.li>
+            ))}
+          </div>
         </div>
-      </div>
-    </motion.ul></>
+      </motion.ul>
+    </>
   );
 };
 

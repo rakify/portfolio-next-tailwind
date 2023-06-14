@@ -10,7 +10,10 @@ const About: NextPage = () => {
     <>
       <Head>
         <title>Rakib Miah - Portfolio</title>
-        <meta name="google-site-verification" content="BcYnjNH5zbRhIy9Ti23uSoV7Vpn-6selgYPdiwkvtss" />
+        <meta
+          name="google-site-verification"
+          content="BcYnjNH5zbRhIy9Ti23uSoV7Vpn-6selgYPdiwkvtss"
+        />
         <meta
           name="description"
           content="I am Rakib Miah. Passionate about Javascript library and framework. Over 1 year of development experience in HTML, CSS, JS, React and NextJS frameworks and  backend dev. Have an exciting project you need help with? Send me an email or call me directly!"
@@ -32,7 +35,7 @@ const About: NextPage = () => {
           or react native project.
         </h6>
         <div
-          className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100 "
+          className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-gray"
           style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
         >
           <h4 className="my-5 text-xl font-semibold tracking-wide">
@@ -43,7 +46,7 @@ const About: NextPage = () => {
             {/* children's initial and animate property should be same as the parent during a stagger effect  */}
             {services.map((service) => (
               <div
-                className="col-span-2 p-2 bg-gray-200 rounded-lg dark:bg-dark-200 md:col-span-1 "
+                className="col-span-2 p-2 bg-gray-200 rounded-lg dark:bg-gray-100 md:col-span-1 "
                 key={service.title}
               >
                 <Services service={service} />
