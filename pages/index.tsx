@@ -1,9 +1,9 @@
-import { NextPage } from "next";
-import { motion } from "framer-motion";
+import { NextPage } from "next"
+import { motion } from "framer-motion"
 
-import Services from "../components/Services";
-import { services } from "../utils/data";
-import Head from "next/head";
+import Services from "../components/Services"
+import { services } from "../utils/data"
+import Head from "next/head"
 
 const About: NextPage = () => {
   return (
@@ -21,7 +21,7 @@ const About: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <motion.div
-        className="flex flex-col flex-grow px-6 pt-1 box "
+        className="box flex flex-grow flex-col px-6 pt-1 "
         initial={{ x: "-300px", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         exit={{ y: "-300px", opacity: 0 }}
@@ -35,18 +35,18 @@ const About: NextPage = () => {
           or react native project.
         </h6>
         <div
-          className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-gray"
+          className="mt-5 flex-grow bg-gray-400 p-4 dark:bg-gray"
           style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
         >
           <h4 className="my-5 text-xl font-semibold tracking-wide">
             What I am doing
           </h4>
 
-          <div className="grid gap-6 mt-3 md:grid-cols-2">
+          <div className="mt-3 grid gap-6 md:grid-cols-2">
             {/* children's initial and animate property should be same as the parent during a stagger effect  */}
             {services.map((service) => (
               <div
-                className="col-span-2 p-2 bg-gray-200 rounded-lg dark:bg-gray-100 md:col-span-1 "
+                className="col-span-2 rounded-lg bg-gray-200 p-2 dark:bg-gray-100 md:col-span-1 "
                 key={service.title}
               >
                 <Services service={service} />
@@ -56,6 +56,6 @@ const About: NextPage = () => {
         </div>
       </motion.div>
     </>
-  );
-};
-export default About;
+  )
+}
+export default About

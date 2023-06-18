@@ -3,7 +3,7 @@
   "pluginSearchDirs": false,
   "trailingComma": "es5",
   "tabWidth": 2,
-  "semi": true,
-  "singleQuote": true,
+  "semi": false,
+  "singleQuote": false,
   "printWidth": 80
 }

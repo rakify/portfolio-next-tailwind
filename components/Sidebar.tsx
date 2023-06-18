@@ -1,23 +1,18 @@
-import Image from 'next/image';
-import pic from '../public/images/Rakib.jpg';
-import {
-  FaAddressCard,
-  FaPhone,
-  FaGithubAlt,
-  FaLinkedin,
-} from 'react-icons/fa';
-import { MdEmail } from 'react-icons/md';
-import Link from 'next/link';
-import { useTheme } from 'next-themes';
+import Image from "next/image"
+import pic from "../public/images/Rakib.jpg"
+import { FaAddressCard, FaPhone, FaGithubAlt, FaLinkedin } from "react-icons/fa"
+import { MdEmail } from "react-icons/md"
+import Link from "next/link"
+import { useTheme } from "next-themes"
 
-import Styles from './styles.module.scss';
+import Styles from "./styles.module.scss"
 
 const Sidebar = () => {
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme } = useTheme()
 
   const changeTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
-  };
+    setTheme(theme === "light" ? "dark" : "light")
+  }
   return (
     <>
       <Image
@@ -97,7 +92,7 @@ const Sidebar = () => {
           } dark:bg-gray-100 dark:text-[#ccc] dark:hover:bg-gray-300`}
           onClick={() =>
             window.open(
-              'https://drive.google.com/file/d/1CuuvKfLShvz64mWvqpheIcaSAsQ8LP-T/view'
+              "https://drive.google.com/file/d/1CuuvKfLShvz64mWvqpheIcaSAsQ8LP-T/view"
             )
           }
         >
@@ -107,14 +102,14 @@ const Sidebar = () => {
         <label className={`${Styles[`switch`]}`}>
           <input
             type="checkbox"
-            checked={theme === 'light'}
+            checked={theme === "light"}
             id="checkbox"
-            onClick={changeTheme}
+            onChange={changeTheme}
           />
           <span className={`${Styles[`slider`]}`}></span>
         </label>
       </div>
     </>
-  );
-};
-export default Sidebar;
+  )
+}
+export default Sidebar
