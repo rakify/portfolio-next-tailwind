@@ -1,8 +1,8 @@
-import { FaReact, FaServer, FaLaptopCode } from "react-icons/fa";
-import { SiFastapi } from "react-icons/si";
-import { TProject, Service, Skill } from "./interface";
+import { FaReact, FaServer, FaLaptopCode } from "react-icons/fa"
+import { SiFastapi } from "react-icons/si"
+import { TProject, Service, Skill } from "./interface"
 
-import { BsCircleFill } from "react-icons/bs";
+import { BsCircleFill } from "react-icons/bs"
 
 export const services: Service[] = [
   {
@@ -29,7 +29,7 @@ export const services: Service[] = [
     about:
       "Honed my problem-solving skills through daily engagement in <b>Codeforces</b>, <b>Atcoder</b> and <b>Codechef</b>.",
   },
-];
+]
 
 export const frontend: Skill[] = [
   {
@@ -73,7 +73,7 @@ export const frontend: Skill[] = [
     name: "GraphQL",
     level: "50",
   },
-];
+]
 
 export const backend: Skill[] = [
   {
@@ -96,7 +96,7 @@ export const backend: Skill[] = [
     name: "GIT",
     level: "80",
   },
-];
+]
 
 export const projectsData: TProject[] = [
   {
@@ -222,4 +222,4 @@ export const projectsData: TProject[] = [
     stacks: ["ReactJS", "ExpressJS", "NodeJS", "Axios", "AlanAI"],
     category: ["react", "express", "node"],
   },
-];
+]

@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
-import Head from "next/head";
-import { backend, frontend } from "../utils/data";
+import { motion } from "framer-motion"
+import Head from "next/head"
+import { backend, frontend } from "../utils/data"
 
 const Resume = () => {
   return (
@@ -15,14 +15,14 @@ const Resume = () => {
       </Head>
 
       <motion.div
-        className="px-6 py-2 box"
+        className="box px-6 py-2"
         initial={{ x: "-100px", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         exit={{ y: "-100px", opacity: 0 }}
       >
         <div className="grid gap-6 md:grid-cols-2">
           <div>
-            <h5 className="my-3 text-2xl font-bold border-b-4">
+            <h5 className="my-3 border-b-4 text-2xl font-bold">
               Programming Skills
             </h5>
             <h6 className="my-3 text-base font-medium">
@@ -30,7 +30,7 @@ const Resume = () => {
               More Than 400 Problems.
             </h6>
             <div className="flex flex-row">
-              <p className="font-semibold pr-1">Codeforces: </p>
+              <p className="pr-1 font-semibold">Codeforces: </p>
               <a
                 href="https://codeforces.com/profile/RakibMiah"
                 target="_blank"
@@ -40,7 +40,7 @@ const Resume = () => {
               </a>
             </div>
             <div className="flex flex-row">
-              <p className="font-semibold pr-1">Atcoder: </p>
+              <p className="pr-1 font-semibold">Atcoder: </p>
               <a
                 href="https://atcoder.com/users/RakibMiah"
                 target="_blank"
@@ -50,7 +50,7 @@ const Resume = () => {
               </a>
             </div>{" "}
             <div className="flex flex-row">
-              <p className="font-semibold pr-1">Codechef: </p>
+              <p className="pr-1 font-semibold">Codechef: </p>
               <a
                 href="https://www.codechef.com/users/rakibmiah"
                 target="_blank"
@@ -65,11 +65,11 @@ const Resume = () => {
         {/* Skills */}
         <div className="grid gap-9">
           <div>
-            <h5 className="my-3 text-2xl font-bold border-b-4">Tech Skills</h5>
-            <div className="my-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-[5px]">
+            <h5 className="my-3 border-b-4 text-2xl font-bold">Tech Skills</h5>
+            <div className="my-2 grid grid-cols-1 gap-[5px] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
               {frontend.map((f, i) => (
                 <p
-                  className="bg-[#36454f] text-white pr-1 pl-1 text-center"
+                  className="bg-[#36454f] pr-1 pl-1 text-center text-white"
                   key={i}
                 >
                   {f.name}
@@ -77,7 +77,7 @@ const Resume = () => {
               ))}
               {backend.map((f, i) => (
                 <p
-                  className="bg-[#36454f] text-white pr-1 pl-1 text-center"
+                  className="bg-[#36454f] pr-1 pl-1 text-center text-white"
                   key={i}
                 >
                   {f.name}
@@ -90,7 +90,7 @@ const Resume = () => {
         {/* //! Education */}
         <div className="grid gap-6 md:grid-cols-2">
           <div>
-            <h5 className="my-3 text-2xl font-bold border-b-4">Education</h5>
+            <h5 className="my-3 border-b-4 text-2xl font-bold">Education</h5>
             <div className="">
               <h5 className="my-2 text-xl font-bold">
                 BSc in Computer Science Engineering
@@ -115,7 +115,7 @@ const Resume = () => {
         </div>
       </motion.div>
     </>
-  );
-};
+  )
+}
 
-export default Resume;
+export default Resume

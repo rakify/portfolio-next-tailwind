@@ -1,4 +1,4 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import { Html, Head, Main, NextScript } from "next/document"
 
 export default function Document() {
   return (
@@ -11,10 +11,10 @@ export default function Document() {
           rel="stylesheet"
         />
       </Head>
-      <body className="bg-[url(/images/Texture.png)] bg-repeat bg-slate-400 dark:bg-black dark:text-white">
+      <body className="bg-slate-400 bg-[url(/images/Texture.png)] bg-repeat dark:bg-gray dark:text-[#CCCCCC]">
         <Main />
         <NextScript />
       </body>
     </Html>
-  );
+  )
 }
