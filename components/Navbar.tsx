@@ -1,12 +1,12 @@
-import { useState, useEffect, FC } from "react";
-import { useRouter } from "next/router";
-import Link from "next/link";
+import { useState, useEffect, FC } from "react"
+import { useRouter } from "next/router"
+import Link from "next/link"
 
 const NavItem: FC<{
-  active: string;
-  setActive: Function;
-  name: string;
-  route: string;
+  active: string
+  setActive: Function
+  name: string
+  route: string
 }> = ({ active, setActive, name, route }) => {
   return active !== name ? (
     <Link href={route} legacyBehavior>
@@ -19,23 +19,23 @@ const NavItem: FC<{
         </span>
       </a>
     </Link>
-  ) : null;
-};
+  ) : null
+}
 
 const Navbar = () => {
-  const { pathname } = useRouter();
+  const { pathname } = useRouter()
 
-  const [active, setActive] = useState("");
+  const [active, setActive] = useState("")
 
   useEffect(() => {
-    if (pathname === "/") setActive("About");
-    else if (pathname === "/projects") setActive("Projects");
-    else if (pathname === "/resume") setActive("Resume");
-  }, [pathname]);
+    if (pathname === "/") setActive("About")
+    else if (pathname === "/projects") setActive("Projects")
+    else if (pathname === "/resume") setActive("Resume")
+  }, [pathname])
 
   return (
-    <div className="flex items-center justify-between px-5 py-3 my-3">
-      <span className="text-xl font-bold border-b-4 md:text-2xl border-[#59b256]">
+    <div className="my-3 flex items-center justify-between px-5 py-3">
+      <span className="border-b-4 border-[#59b256] text-xl font-bold md:text-2xl">
         {active}
       </span>
 
@@ -55,7 +55,7 @@ const Navbar = () => {
         />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
