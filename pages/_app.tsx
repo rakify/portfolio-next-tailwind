@@ -7,7 +7,7 @@ import type { AppProps } from "next/app"
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute="class">
-      <div className="grid grid-cols-12 gap-6 py-14 px-2 sm:px-40 md:mb-8 md:px-40 lg:mb-0 lg:px-14 xl:px-20 ">
+      <div className="grid grid-cols-12 gap-6 py-14 px-5 lg:px-3 sm:mx-10 md:mb-8 md:mx-20 lg:mb-0 lg:mx-14 xl:mx-20 ">
         <div className="col-span-12 h-full items-center rounded-2xl bg-white p-4 text-center text-base shadow-custom-light dark:bg-gray-100 dark:shadow-custom-dark lg:col-span-4">
           <Sidebar />
         </div>

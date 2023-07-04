@@ -14,7 +14,7 @@ const Sidebar = () => {
     setTheme(theme === "light" ? "dark" : "light")
   }
   return (
-    <>
+    <div className="flex flex-col justify-between">
       <Image
         src={pic}
         alt="Picture of Rakib"
@@ -110,7 +110,7 @@ const Sidebar = () => {
           <span className={`${Styles[`slider`]}`}></span>
         </label>
       </div>
-    </>
+    </div>
   )
 }
 export default Sidebar

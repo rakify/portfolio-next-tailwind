@@ -24,11 +24,11 @@ const Resume = () => {
           {/* Working Experience */}
           <div className="">
             <div>
-              <h5 className="my-3 border-b-4 text-2xl font-bold">
+              <h5 className="my-3 border-b-4 text-lg font-bold xl:text-2xl">
                 Working Experience
               </h5>
               <div className="pb-2">
-                <h3 className="my-2 text-lg font-bold">
+                <h3 className="text-md my-2 font-bold xl:text-lg">
                   Frontend Developer (Internship)
                 </h3>
                 <p className="font-medium text-[green] dark:text-white">
@@ -51,7 +51,7 @@ const Resume = () => {
                 </li>
                 <li className="my-1 text-sm font-extralight">
                   Added new feature to the backend of an existing project using
-                  NestJS, Typeorm, Mysql, GraphQL.
+                  NestJS, Typeorm, MySQL, GraphQL.
                 </li>
               </ul>
             </div>
@@ -59,7 +59,7 @@ const Resume = () => {
           {/* Programming Skills */}
           <div className="">
             <div>
-              <h5 className="my-3 border-b-4 text-2xl font-bold">
+              <h5 className="my-3 border-b-4 text-lg font-bold xl:text-2xl">
                 Programming Skills
               </h5>
               <h6 className="my-3 text-base font-medium">
@@ -109,7 +109,7 @@ const Resume = () => {
                 <h6 className="inline border-b-2 text-cyan-700 dark:text-white">
                   Frontend
                 </h6>
-                <div className="my-2 grid grid-cols-1 gap-[5px] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3">
+                <div className="my-2 grid grid-cols-2 gap-[5px] sm:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3">
                   {frontend.map((f, i) => (
                     <p
                       className="rounded-lg bg-cyan-700 pr-1 pl-1 text-center text-white"
@@ -125,7 +125,7 @@ const Resume = () => {
                 <h6 className="inline border-b-2 text-cyan-700 dark:text-white">
                   Backend
                 </h6>
-                <div className="my-2 grid grid-cols-1 gap-[5px] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3">
+                <div className="my-2 grid grid-cols-2 gap-[5px] sm:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3">
                   {backend.map((f, i) => (
                     <p
                       className="rounded-lg bg-cyan-700 pr-1 pl-1 text-center text-white"
@@ -139,44 +139,44 @@ const Resume = () => {
             </div>
           </div>
         </div>
-        
+
         {/* Education */}
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6">
           <div>
             <h5 className="my-3 border-b-4 text-2xl font-bold">Education</h5>
             <div className="flex items-center justify-between">
               <div className="">
-                <h5 className="my-2 text-xl font-bold">
+                <h5 className="my-2 text-sm font-bold">
                   BSc in Computer Science & Engineering
                 </h5>
                 <p className="font-medium text-[green] dark:text-white">
                   - Eastern University (2019-2023)
                 </p>
               </div>
-              <p className="dark:text-[yellow]">3.73</p>
+              <div className="dark:text-[yellow]">3.73</div>
             </div>
             <div className="flex items-center justify-between">
               <div className="">
-                <h5 className="my-2 text-xl font-bold">
+                <h5 className="my-2 text-sm font-bold">
                   Higher Secondary Certificate
                 </h5>
                 <p className="font-medium text-[green] dark:text-white">
                   - Narsingdi Science College (2014-2016)
                 </p>
               </div>
-              <p className="dark:text-[yellow]">5.00</p>
+              <div className="dark:text-[yellow]">5.00</div>
             </div>
 
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between pb-3">
               <div className="">
-                <h5 className="my-2 text-xl font-bold">
+                <h5 className="my-2 text-sm font-bold">
                   Secondary School Certificate
                 </h5>
                 <p className="font-medium text-[green] dark:text-white">
                   - Chaitanya High School (2004-2014)
                 </p>
               </div>
-              <p className="dark:text-[yellow]">5.00</p>
+              <div className="dark:text-[yellow]">5.00</div>
             </div>
           </div>
         </div>
