@@ -30,8 +30,26 @@ const Sidebar = () => {
         Software Engineer
       </p>
 
+      {/* Contacts */}
+      <div
+        className={`${Styles["job-title"]} my-5 py-4 dark:bg-gray-100 dark:text-[#ccc]`}
+      >
+        <div className="flex items-center">
+          <FaAddressCard className="mr-2" />
+          <span>Dhaka, Bangladesh</span>
+        </div>
+        <div className="flex items-center">
+          <MdEmail className="mr-2" />
+          <span>irakibm@gmail.com</span>
+        </div>
+        <div className="flex items-center">
+          <FaPhone className="mr-2" />
+          <span>+8801580841319</span>
+        </div>
+      </div>
+
       {/* Social Icons */}
-      <div className="text-green mx-auto my-5 flex w-9/12 justify-around md:w-full ">
+      <div className="text-green mx-auto my-5 flex w-9/12 justify-around lg:w-full ">
         <Link href="https://github.com/rakify" legacyBehavior>
           <a
             target="_blank"
@@ -65,23 +83,6 @@ const Sidebar = () => {
             <span></span>
           </a>
         </Link>
-      </div>
-
-      {/* Contacts */}
-      <div
-        className={`${
-          Styles[`job-title`]
-        } my-5 py-4 dark:bg-gray-100 dark:text-[#ccc]`}
-      >
-        <div className="flex items-center justify-evenly">
-          <FaAddressCard className="mr-2" /> <span>Dhaka, Bangladesh</span>
-        </div>
-        <div className="flex items-center justify-evenly">
-          <MdEmail className="mr-2" /> irakibm@gmail.com
-        </div>
-        <div className="flex items-center justify-evenly">
-          <FaPhone className="mr-4" /> +8801580841319
-        </div>
       </div>
 
       {/* Bottom */}
