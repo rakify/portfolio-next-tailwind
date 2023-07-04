@@ -44,23 +44,23 @@ export const frontend: Skill[] = [
   },
   {
     Icon: BsCircleFill,
-    name: "React Native",
-    level: "70",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "ReduxToolkit",
+    name: "Redux Toolkit",
     level: "90",
   },
 
   {
     Icon: BsCircleFill,
-    name: "TailwindCSS",
+    name: "Tailwind CSS",
     level: "70",
   },
   {
     Icon: BsCircleFill,
     name: "MUI",
+    level: "80",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Ant Design",
     level: "80",
   },
   {
@@ -72,6 +72,12 @@ export const frontend: Skill[] = [
     Icon: BsCircleFill,
     name: "GraphQL",
     level: "50",
+  },
+
+  {
+    Icon: BsCircleFill,
+    name: "React Native",
+    level: "70",
   },
 ]
 
@@ -88,7 +94,32 @@ export const backend: Skill[] = [
   },
   {
     Icon: BsCircleFill,
+    name: "NestJS",
+    level: "80",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Rest API",
+    level: "80",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "GraphQL",
+    level: "80",
+  },
+  {
+    Icon: BsCircleFill,
     name: "MongoDB",
+    level: "70",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "MySQL",
+    level: "70",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "MySQL",
     level: "70",
   },
   {
