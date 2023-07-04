@@ -33,8 +33,10 @@ const Resume = () => {
                 </h3>
                 <p className="font-medium text-[green] dark:text-white">
                   {"- "}
-                  <a href="https://lemonhive.com">Lemon Hive</a> (03/2023 -
-                  06/2023)
+                  <a className="hover:underline" href="https://lemonhive.com">
+                    Lemon Hive
+                  </a>{" "}
+                  (03/2023 - 06/2023)
                 </p>
               </div>
               <h6 className="inline border-b-2 text-cyan-700 dark:text-white">
@@ -72,6 +74,7 @@ const Resume = () => {
                   href="https://codeforces.com/profile/RakibMiah"
                   target="_blank"
                   rel="noreferrer"
+                  className="hover:underline"
                 >
                   Codeforces/RakibMiah
                 </a>
@@ -82,16 +85,18 @@ const Resume = () => {
                   href="https://atcoder.com/users/RakibMiah"
                   target="_blank"
                   rel="noreferrer"
+                  className="hover:underline"
                 >
                   Atcoder/RakibMiah
                 </a>
-              </div>{" "}
+              </div>
               <div className="flex flex-row">
                 <p className="pr-1 font-semibold">Codechef: </p>
                 <a
                   href="https://www.codechef.com/users/rakibmiah"
                   target="_blank"
                   rel="noreferrer"
+                  className="hover:underline"
                 >
                   Codechef/rakibmiah
                 </a>
