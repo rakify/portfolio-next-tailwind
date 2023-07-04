@@ -20,48 +20,85 @@ const Resume = () => {
         animate={{ x: 0, opacity: 1 }}
         exit={{ y: "-100px", opacity: 0 }}
       >
-        <div className="grid gap-6 md:grid-cols-2">
-          <div>
-            <h5 className="my-3 border-b-4 text-2xl font-bold">
-              Programming Skills
-            </h5>
-            <h6 className="my-3 text-base font-medium">
-              Participated in 140+ online programming competitions and Solved
-              More Than 400 Problems.
-            </h6>
-            <div className="flex flex-row">
-              <p className="pr-1 font-semibold">Codeforces: </p>
-              <a
-                href="https://codeforces.com/profile/RakibMiah"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Codeforces/RakibMiah
-              </a>
+        <div className="flex justify-between gap-2">
+          {/* Working Experience */}
+          <div className="">
+            <div>
+              <h5 className="my-3 border-b-4 text-2xl font-bold">
+                Working Experience
+              </h5>
+              <div className="pb-2">
+                <h5 className="my-2 text-xl font-bold">
+                  Frontend Developer (Internship)
+                </h5>
+                <p className="font-medium text-[green] dark:text-white">
+                  {"- "}
+                  <a href="https://lemonhive.com">Lemonhive</a> (03/2023 -
+                  06/2023)
+                </p>
+              </div>
+              <h6 className="inline border-b-2 text-cyan-700 dark:text-white">
+                Achievements/Tasks
+              </h6>
+              <ul className="list-disc">
+                <li className="my-1 text-sm font-extralight">
+                  Added new feature to the frontend on an existing project using
+                  Ant Design and Sass.
+                </li>
+                <li className="my-1 text-sm font-extralight">
+                  Worked on their own headless website using Typescript,
+                  Tailwind, Storybook and Jest.
+                </li>
+                <li className="my-1 text-sm font-extralight">
+                  Added new feature to the backend of an existing project using
+                  NestJS, Typeorm, Mysql, GraphQL.
+                </li>
+              </ul>
             </div>
-            <div className="flex flex-row">
-              <p className="pr-1 font-semibold">Atcoder: </p>
-              <a
-                href="https://atcoder.com/users/RakibMiah"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Atcoder/RakibMiah
-              </a>
-            </div>{" "}
-            <div className="flex flex-row">
-              <p className="pr-1 font-semibold">Codechef: </p>
-              <a
-                href="https://www.codechef.com/users/rakibmiah"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Codechef/rakibmiah
-              </a>
+          </div>
+          {/* Programming Skills */}
+          <div className="">
+            <div>
+              <h5 className="my-3 border-b-4 text-2xl font-bold">
+                Programming Skills
+              </h5>
+              <h6 className="my-3 text-base font-medium">
+                Participated in 140+ online programming competitions and Solved
+                More Than 400 Problems.
+              </h6>
+              <div className="flex flex-row">
+                <p className="pr-1 font-semibold">Codeforces: </p>
+                <a
+                  href="https://codeforces.com/profile/RakibMiah"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Codeforces/RakibMiah
+                </a>
+              </div>
+              <div className="flex flex-row">
+                <p className="pr-1 font-semibold">Atcoder: </p>
+                <a
+                  href="https://atcoder.com/users/RakibMiah"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Atcoder/RakibMiah
+                </a>
+              </div>{" "}
+              <div className="flex flex-row">
+                <p className="pr-1 font-semibold">Codechef: </p>
+                <a
+                  href="https://www.codechef.com/users/rakibmiah"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Codechef/rakibmiah
+                </a>
+              </div>
             </div>
           </div>
         </div>
-
         {/* Skills */}
         <div className="grid gap-9">
           <div>
@@ -86,30 +123,43 @@ const Resume = () => {
             </div>
           </div>
         </div>
-
         {/* //! Education */}
         <div className="grid gap-6 md:grid-cols-2">
           <div>
             <h5 className="my-3 border-b-4 text-2xl font-bold">Education</h5>
-            <div className="">
-              <h5 className="my-2 text-xl font-bold">
-                BSc in Computer Science Engineering
-              </h5>
-              <p className="font-medium">- Eastern University (2019-2023)</p>
+            <div className="flex items-center justify-between">
+              <div className="">
+                <h5 className="my-2 text-xl font-bold">
+                  BSc in Computer Science & Engineering
+                </h5>
+                <p className="font-medium text-[green] dark:text-white">
+                  - Eastern University (2019-2023)
+                </p>
+              </div>
+              <p className="dark:text-[yellow]">3.73</p>
             </div>
-            <div className="">
-              <h5 className="my-2 text-xl font-bold">
-                Higher Secondary Certificate
-              </h5>
-              <p className="font-medium">
-                - Narsingdi Science College (2014-2016)
-              </p>
+            <div className="flex items-center justify-between">
+              <div className="">
+                <h5 className="my-2 text-xl font-bold">
+                  Higher Secondary Certificate
+                </h5>
+                <p className="font-medium text-[green] dark:text-white">
+                  - Narsingdi Science College (2014-2016)
+                </p>
+              </div>
+              <p className="dark:text-[yellow]">5.00</p>
             </div>
-            <div className="">
-              <h5 className="my-2 text-xl font-bold">
-                Secondary School Certificate
-              </h5>
-              <p className="font-medium">- Chaitanya High School (2004-2014)</p>
+
+            <div className="flex items-center justify-between">
+              <div className="">
+                <h5 className="my-2 text-xl font-bold">
+                  Secondary School Certificate
+                </h5>
+                <p className="font-medium text-[green] dark:text-white">
+                  - Chaitanya High School (2004-2014)
+                </p>
+              </div>
+              <p className="dark:text-[yellow]">5.00</p>
             </div>
           </div>
         </div>
