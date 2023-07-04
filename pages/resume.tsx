@@ -20,7 +20,7 @@ const Resume = () => {
         animate={{ x: 0, opacity: 1 }}
         exit={{ y: "-100px", opacity: 0 }}
       >
-        <div className="flex justify-between gap-2">
+        <div className="flex flex-col justify-between gap-2 lg:flex-row">
           {/* Working Experience */}
           <div className="">
             <div>
@@ -28,12 +28,12 @@ const Resume = () => {
                 Working Experience
               </h5>
               <div className="pb-2">
-                <h5 className="my-2 text-xl font-bold">
+                <h3 className="my-2 text-lg font-bold">
                   Frontend Developer (Internship)
-                </h5>
+                </h3>
                 <p className="font-medium text-[green] dark:text-white">
                   {"- "}
-                  <a href="https://lemonhive.com">Lemonhive</a> (03/2023 -
+                  <a href="https://lemonhive.com">Lemon Hive</a> (03/2023 -
                   06/2023)
                 </p>
               </div>
@@ -103,27 +103,44 @@ const Resume = () => {
         <div className="grid gap-9">
           <div>
             <h5 className="my-3 border-b-4 text-2xl font-bold">Tech Skills</h5>
-            <div className="my-2 grid grid-cols-1 gap-[5px] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
-              {frontend.map((f, i) => (
-                <p
-                  className="bg-[#36454f] pr-1 pl-1 text-center text-white"
-                  key={i}
-                >
-                  {f.name}
-                </p>
-              ))}
-              {backend.map((f, i) => (
-                <p
-                  className="bg-[#36454f] pr-1 pl-1 text-center text-white"
-                  key={i}
-                >
-                  {f.name}
-                </p>
-              ))}
+            <div className="flex flex-col justify-between gap-2 lg:flex-row">
+              {/* Frontend */}
+              <div className="flex-grow">
+                <h6 className="inline border-b-2 text-cyan-700 dark:text-white">
+                  Frontend
+                </h6>
+                <div className="my-2 grid grid-cols-1 gap-[5px] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3">
+                  {frontend.map((f, i) => (
+                    <p
+                      className="rounded-lg bg-cyan-700 pr-1 pl-1 text-center text-white"
+                      key={i}
+                    >
+                      {f.name}
+                    </p>
+                  ))}
+                </div>
+              </div>
+              {/* Backend */}
+              <div className="flex-grow">
+                <h6 className="inline border-b-2 text-cyan-700 dark:text-white">
+                  Backend
+                </h6>
+                <div className="my-2 grid grid-cols-1 gap-[5px] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3">
+                  {backend.map((f, i) => (
+                    <p
+                      className="rounded-lg bg-cyan-700 pr-1 pl-1 text-center text-white"
+                      key={i}
+                    >
+                      {f.name}
+                    </p>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        {/* //! Education */}
+        
+        {/* Education */}
         <div className="grid gap-6 md:grid-cols-2">
           <div>
             <h5 className="my-3 border-b-4 text-2xl font-bold">Education</h5>
