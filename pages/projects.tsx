@@ -28,10 +28,10 @@ const item = {
 
 const Projects = () => {
   const [projects, setProjects] = useState(projectsData)
-  const [active, setActive] = useState("all")
+  const [active, setActive] = useState("All")
 
-  const handlerFilterCategory = (category: Category | "all") => {
-    if (category === "all") {
+  const handlerFilterCategory = (category: Category | "All") => {
+    if (category === "All") {
       setProjects(projectsData)
       setActive(category)
       return
