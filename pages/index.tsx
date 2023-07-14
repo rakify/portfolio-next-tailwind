@@ -1,6 +1,4 @@
 import { NextPage } from "next"
-import { motion } from "framer-motion"
-
 import Services from "../components/Services"
 import { services } from "../utils/data"
 import Head from "next/head"
@@ -20,19 +18,14 @@ const About: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <motion.div
-        className="box flex flex-grow flex-col px-6 pt-1 "
-        initial={{ x: "-300px", opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        exit={{ y: "-300px", opacity: 0 }}
-      >
+      <div className="box flex flex-grow flex-col px-6 pt-1 ">
         <h6 className="my-3 text-base font-medium">
-          Last 3 years I have spent most of my time learning Algorithms, Data
-          Structure and doing competitive programming and for a year I have
-          spent my time learning JavaScript Framework and Library. I can build
-          web apps using MERN stack, Nextjs and mobile apps using React Native.
-          I am currently available to collaborate on any web development project
-          or react native project.
+          Dedicated the past three years to honing my skills in competitive
+          programming while gaining practical experience with JavaScript
+          frameworks and libraries. Eager to leverage my expertise in a
+          professional setting, I am actively seeking a job that provides
+          opportunities for growth, engaging real-world projects, and the
+          ability to measure my performance.
         </h6>
         <div
           className="mt-5 flex-grow bg-gray-400 p-4 dark:bg-gray"
@@ -54,7 +47,7 @@ const About: NextPage = () => {
             ))}
           </div>
         </div>
-      </motion.div>
+      </div>
     </>
   )
 }
