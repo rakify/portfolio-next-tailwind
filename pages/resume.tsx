@@ -1,4 +1,3 @@
-import { motion } from "framer-motion"
 import Head from "next/head"
 import { backend, frontend } from "../utils/data"
 
@@ -14,12 +13,7 @@ const Resume = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <motion.div
-        className="box px-6 py-2"
-        initial={{ x: "-100px", opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        exit={{ y: "-100px", opacity: 0 }}
-      >
+      <div className="px-6 py-2">
         <div className="flex flex-col justify-between gap-2 lg:flex-row">
           {/* Working Experience */}
           <div className="">
@@ -185,7 +179,7 @@ const Resume = () => {
             </div>
           </div>
         </div>
-      </motion.div>
+      </div>
     </>
   )
 }
