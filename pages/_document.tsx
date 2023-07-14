@@ -11,7 +11,7 @@ export default function Document() {
           rel="stylesheet"
         />
       </Head>
-      <body className="bg-slate-400 bg-[url(/images/Texture.png)] bg-repeat dark:bg-gray dark:text-[#CCCCCC]">
+      <body className="bg-slate-400 dark:bg-gray dark:text-[#CCCCCC]">
         <Main />
         <NextScript />
       </body>
