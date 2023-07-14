@@ -25,10 +25,15 @@ export interface TProject {
 }
 
 export type Category =
-  | "react"
-  | "node"
-  | "express"
-  | "mongo"
-  | "firebase"
-  | "next"
-  | "reactNative"
+  | "React"
+  | "Express"
+  | "Mongo"
+  | "Firebase"
+  | "Next"
+  | "React Native"
+  | "Template"
+  | "Tasks"
+  | "GraphQL"
+  | "Rest API"
+  | "Nest"
+  | "MySQL"

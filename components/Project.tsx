@@ -4,7 +4,6 @@ import { MdClose } from "react-icons/md"
 import { TProject } from "../utils/interface"
 
 import Image from "next/image"
-import Head from "next/head"
 
 const ProjectCard: FC<{
   project: TProject
