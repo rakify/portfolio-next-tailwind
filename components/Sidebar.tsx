@@ -6,13 +6,9 @@ import Link from "next/link"
 import { useTheme } from "next-themes"
 
 import Styles from "./styles.module.scss"
+import DarkModeToggle from "./DarkModeToggle"
 
 const Sidebar = () => {
-  const { theme, setTheme } = useTheme()
-
-  const changeTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light")
-  }
   return (
     <div className="flex flex-col justify-between">
       <Image
@@ -100,15 +96,7 @@ const Sidebar = () => {
           Download Resume
         </button>
 
-        <label className={`${Styles[`switch`]}`}>
-          <input
-            type="checkbox"
-            checked={theme === "light"}
-            id="checkbox"
-            onChange={changeTheme}
-          />
-          <span className={`${Styles[`slider`]}`}></span>
-        </label>
+        <DarkModeToggle />
       </div>
     </div>
   )
