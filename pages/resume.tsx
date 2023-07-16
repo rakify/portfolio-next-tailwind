@@ -37,15 +37,15 @@ const Resume = () => {
                 Achievements/Tasks
               </h6>
               <ul className="list-disc">
-                <li className="my-1 text-sm font-extralight">
+                <li className="my-1 text-sm font-light">
                   Added new feature to the frontend on an existing project using
                   Ant Design and Sass.
                 </li>
-                <li className="my-1 text-sm font-extralight">
+                <li className="my-1 text-sm font-light">
                   Worked on their own headless website using Typescript,
                   Tailwind, Storybook and Jest.
                 </li>
-                <li className="my-1 text-sm font-extralight">
+                <li className="my-1 text-sm font-light">
                   Added new feature to the backend of an existing project using
                   NestJS, Typeorm, MySQL, GraphQL.
                 </li>
