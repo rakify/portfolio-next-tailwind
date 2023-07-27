@@ -20,12 +20,12 @@ const About: NextPage = () => {
       </Head>
       <div className="box flex flex-grow flex-col px-6 pt-1 ">
         <h6 className="my-3 text-base font-medium">
-          Dedicated the past three years to honing my skills in competitive
-          programming while gaining practical experience with JavaScript
-          frameworks and libraries. Eager to leverage my expertise in a
-          professional setting, I am actively seeking a job that provides
-          opportunities for growth, engaging real-world projects, and the
-          ability to measure my performance.
+          Professionally skilled in competitive programming and experienced in
+          developing with JavaScript frameworks and libraries. Currently working
+          as a <b>Software Engineer</b> at <b>MoveOn Technologies Ltd</b>.
+          Committed to continuous improvement, I am eager to measure my
+          performance and seek opportunities for professional growth and
+          advancement within the organization.
         </h6>
         <div
           className="mt-5 flex-grow bg-gray-400 p-4 dark:bg-gray"

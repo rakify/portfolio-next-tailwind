@@ -15,13 +15,13 @@ export const services: Service[] = [
     Icon: FaServer,
     title: "Backend  Development",
     about:
-      "Equipped to leverage the full potential of <b>Express.js</b> to create a high-performance, reliable, and secure web infrastructure.",
+      "Equipped to leverage the full potential of <b>Express.js</b> & <b>Nest.js</b> to create a high-performance, reliable, and secure web infrastructure.",
   },
   {
     Icon: SiFastapi,
     title: "API Development",
     about:
-      "Capable of designing and implementing a scalable and efficient REST API with <b>Node.js</b>.",
+      "Capable of designing and implementing a scalable and efficient REST API and GraphQL API.",
   },
   {
     Icon: FaLaptopCode,
