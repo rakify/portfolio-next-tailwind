@@ -19,8 +19,20 @@ const Resume = () => {
           <div className="">
             <div>
               <h5 className="my-3 border-b-4 text-lg font-bold xl:text-2xl">
-                Working Experience
+                Experience
               </h5>
+              <div className="pb-2">
+                <h3 className="text-md my-2 font-bold xl:text-lg">
+                  Software Engineer - I
+                </h3>
+                <p className="font-medium text-[green] dark:text-white">
+                  {"- "}
+                  <a className="hover:underline" href="https://moveon.com.bd">
+                    MoveOn Technologies Ltd
+                  </a>
+                </p>
+              </div>
+
               <div className="pb-2">
                 <h3 className="text-md my-2 font-bold xl:text-lg">
                   Frontend Developer (Internship)
@@ -33,23 +45,6 @@ const Resume = () => {
                   (03/2023 - 06/2023)
                 </p>
               </div>
-              <h6 className="inline border-b-2 text-cyan-700 dark:text-white">
-                Achievements/Tasks
-              </h6>
-              <ul className="list-disc">
-                <li className="my-1 text-sm font-light">
-                  Added new feature to the frontend on an existing project using
-                  Ant Design and Sass.
-                </li>
-                <li className="my-1 text-sm font-light">
-                  Worked on their own headless website using Typescript,
-                  Tailwind, Storybook and Jest.
-                </li>
-                <li className="my-1 text-sm font-light">
-                  Added new feature to the backend of an existing project using
-                  NestJS, Typeorm, MySQL, GraphQL.
-                </li>
-              </ul>
             </div>
           </div>
           {/* Programming Skills */}
