@@ -27,7 +27,10 @@ const Resume = () => {
                 </h3>
                 <p className="font-medium text-[green] dark:text-white">
                   {"- "}
-                  <a className="hover:underline text-link" href="https://moveon.com.bd">
+                  <a
+                    className="text-link hover:underline dark:text-white"
+                    href="https://moveon.com.bd"
+                  >
                     MoveOn Technologies Ltd
                   </a>{" "}
                   (08/2023 - Present)
@@ -40,7 +43,10 @@ const Resume = () => {
                 </h3>
                 <p className="font-medium text-[green] dark:text-white">
                   {"- "}
-                  <a className="hover:underline text-link" href="https://lemonhive.com">
+                  <a
+                    className="text-link hover:underline dark:text-white"
+                    href="https://lemonhive.com"
+                  >
                     Lemon Hive
                   </a>{" "}
                   (03/2023 - 06/2023)
