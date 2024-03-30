@@ -99,16 +99,6 @@ export const backend: Skill[] = [
   },
   {
     Icon: BsCircleFill,
-    name: "Rest API",
-    level: "80",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "GraphQL",
-    level: "80",
-  },
-  {
-    Icon: BsCircleFill,
     name: "MongoDB",
     level: "70",
   },
@@ -119,8 +109,13 @@ export const backend: Skill[] = [
   },
   {
     Icon: BsCircleFill,
-    name: "MySQL",
+    name: "PostgreSQL",
     level: "70",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "GraphQL",
+    level: "80",
   },
   {
     Icon: BsCircleFill,

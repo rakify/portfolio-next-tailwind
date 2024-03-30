@@ -45,6 +45,9 @@ module.exports = {
           300: "#474E68",
           // 400: '#31394D',
         },
+        link: {
+          DEFAULT: "#006BFF",
+        },
       },
       fontSize: {
         sm: ["0.875rem"],
