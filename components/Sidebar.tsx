@@ -49,7 +49,7 @@ const Sidebar = () => {
             Connect
           </h5>
         </div>
-        <div className="flex items-center justify-between rounded-2xl border border-gray/5 bg-gray/5 p-4 dark:border-dark-700/50 dark:bg-dark-700/30">
+        <div className="flex items-center justify-center gap-8 rounded-2xl border border-gray/5 bg-gray/5 p-4 dark:border-dark-700/50 dark:bg-dark-700/30">
           <a
             href="https://github.com/rakify"
             target="_blank"
