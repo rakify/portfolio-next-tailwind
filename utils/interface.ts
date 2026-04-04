@@ -15,6 +15,8 @@ export interface TProject {
   id: number
   title: string
   slug: string
+  featured?: boolean
+  companyProject?: boolean
   desc: string
   img: string
   demo: string
@@ -27,13 +29,9 @@ export interface TProject {
 export type Category =
   | "React"
   | "Express"
-  | "Mongo"
-  | "Firebase"
   | "Next"
   | "React Native"
   | "Template"
   | "Tasks"
   | "GraphQL"
-  | "Rest API"
   | "Nest"
-  | "MySQL"

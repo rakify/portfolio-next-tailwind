@@ -4,27 +4,20 @@ import Link from "next/link"
 
 const NavItem: FC<{
   active: string
-  setActive: Function
   name: string
   route: string
-}> = ({ active, setActive, name, route }) => {
+}> = ({ active, name, route }) => {
   return active !== name ? (
-    <Link href={route} legacyBehavior>
-      <a>
-        <span
-          className="mx-2 cursor-pointer text-lg font-medium hover:text-[#59b256]"
-          onClick={() => setActive(name)}
-        >
-          {name}
-        </span>
-      </a>
+    <Link href={route}>
+      <span className="mx-3 cursor-pointer text-base font-semibold text-gray-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+        {name}
+      </span>
     </Link>
   ) : null
 }
 
 const Navbar = () => {
   const { pathname } = useRouter()
-
   const [active, setActive] = useState("")
 
   useEffect(() => {
@@ -35,33 +28,21 @@ const Navbar = () => {
   }, [pathname])
 
   return (
-    <div className="my-3 flex items-center justify-between px-5 py-3">
-      <span className="border-b-4 border-[#59b256] text-xl font-bold md:text-2xl">
-        {active}
-      </span>
-
-      <div className="text-base font-normal md:text-xl">
-        <NavItem active={active} setActive={setActive} name="About" route="/" />
-        <NavItem
-          active={active}
-          setActive={setActive}
-          name="Resume"
-          route="/resume"
-        />
-        <NavItem
-          active={active}
-          setActive={setActive}
-          name="Projects"
-          route="/projects"
-        />
-        <NavItem
-          active={active}
-          setActive={setActive}
-          name="Blogs"
-          route="/blogs"
-        />
+    <nav className="flex items-center justify-between px-6 py-4 mb-2">
+      <div className="relative">
+        <span className="text-xl font-bold tracking-tight text-gray-800 dark:text-gray-100">
+          {active}
+        </span>
+        <div className="absolute -bottom-1 left-0 w-8 h-1 bg-blue-600 dark:bg-blue-400 rounded-full" />
       </div>
-    </div>
+
+      <div className="flex items-center">
+        <NavItem active={active} name="About" route="/" />
+        <NavItem active={active} name="Resume" route="/resume" />
+        <NavItem active={active} name="Projects" route="/projects" />
+        <NavItem active={active} name="Blogs" route="/blogs" />
+      </div>
+    </nav>
   )
 }
 

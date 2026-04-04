@@ -6,11 +6,20 @@ export const NavItem: FC<{
   handlerFilterCategory: Function
   active: string
 }> = ({ value, handlerFilterCategory, active }) => {
-  let className = "cursor-pointer hover:text-[#59b256]"
-  if (active === value) className += " text-[#59b256] underline"
+  const isActive = active === value
 
   return (
-    <li className={className} onClick={() => handlerFilterCategory(value)}>
+    <li
+      className={`
+        cursor-pointer whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-semibold transition-all duration-300
+        ${
+          isActive
+            ? "bg-link text-white shadow-md shadow-link/20 dark:shadow-none"
+            : "bg-gray/5 text-gray/50 hover:bg-gray/10 dark:bg-dark-700 dark:text-gray-400 dark:hover:bg-dark-700/70"
+        }
+      `}
+      onClick={() => handlerFilterCategory(value)}
+    >
       {value}
     </li>
   )
@@ -21,20 +30,19 @@ const ProjectsNavbar: FC<{
   active: string
 }> = (props) => {
   return (
-    <div className="flex list-none space-x-3 overflow-x-auto px-3 py-2">
-      <NavItem value="All" {...props} />
-      <NavItem value="React" {...props} />
-      <NavItem value="Next" {...props} />
-      <NavItem value="Mongo" {...props} />
-      <NavItem value="MySQL" {...props} />
-      <NavItem value="Firebase" {...props} />
-      <NavItem value="Nest" {...props} />
-      <NavItem value="Rest API" {...props} />
-      <NavItem value="GraphQL" {...props} />
-      <NavItem value="React Native" {...props} />
-      <NavItem value="Tasks" {...props} />
-      <NavItem value="Template" {...props} />
-    </div>
+    <nav className="flex items-center">
+      <ul className="flex list-none gap-2 overflow-x-auto pb-2 custom-scrollbar no-scrollbar">
+        <NavItem value="All" {...props} />
+        <NavItem value="React" {...props} />
+        <NavItem value="Next" {...props} />
+        <NavItem value="Express" {...props} />
+        <NavItem value="Nest" {...props} />
+        <NavItem value="GraphQL" {...props} />
+        <NavItem value="React Native" {...props} />
+        <NavItem value="Tasks" {...props} />
+        <NavItem value="Template" {...props} />
+      </ul>
+    </nav>
   )
 }
 

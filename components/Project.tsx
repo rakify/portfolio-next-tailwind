@@ -1,123 +1,222 @@
-import { FC, useState } from "react"
+import { FC, useEffect, useState } from "react"
 import { AiFillGithub, AiFillProject } from "react-icons/ai"
-import { MdClose } from "react-icons/md"
 import { TProject } from "../utils/interface"
+import { createPortal } from "react-dom"
 
 import Image from "next/image"
 
 const ProjectCard: FC<{
   project: TProject
 }> = ({
-  project: { title, img, category, date, demo, desc, github, stacks },
+  project: {
+    title,
+    img,
+    date,
+    demo,
+    desc,
+    github,
+    stacks,
+    featured,
+    companyProject,
+  },
 }) => {
   const [showDetail, setShowDetail] = useState(false)
+  const [isMounted, setIsMounted] = useState(false)
+  const shouldHideImage = Boolean(companyProject)
+  const hasGithub = !companyProject && github.trim().length > 0
+  const isGithubLink = hasGithub && github.includes("github.com")
+  const hasDemo = demo.trim().length > 0
 
-  return (
-    <div>
-      <Image
-        src={img}
-        alt={title}
-        className="h-[150px] cursor-pointer object-cover"
-        onClick={() => setShowDetail(true)}
-        height="100"
-        width="300"
-      />
-      <p className="my-2 text-center">{title}</p>
+  useEffect(() => {
+    setIsMounted(true)
+    return () => setIsMounted(false)
+  }, [])
 
-      {showDetail && (
-        <div className="fixed top-0 left-0 flex h-full w-full items-center justify-center">
-          <div
-            className="absolute h-full w-full bg-gray-900 opacity-50"
-            onClick={() => setShowDetail(false)}
-          ></div>
+  const modal = (
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+      <div
+        className="absolute inset-0 bg-dark/40 backdrop-blur-sm"
+        onClick={() => setShowDetail(false)}
+      ></div>
 
-          <div className="z-50 mx-auto w-11/12 rounded bg-white shadow-slate-700 md:max-w-md">
-            <div className="absolute top-0 right-0 z-50 mt-4 mr-4 flex cursor-pointer flex-col items-center overflow-y-auto text-sm text-white"></div>
+      <div className="relative z-[101] max-h-[90vh] w-full max-w-2xl animate-in fade-in zoom-in overflow-y-auto rounded-3xl bg-white shadow-2xl duration-300 dark:bg-dark-200">
+        <div className="p-8">
+          <div className="mb-6 flex items-start justify-between">
+            <div>
+              <h2 className="text-2xl font-bold tracking-tight text-gray dark:text-white">
+                {title}
+              </h2>
+              <p className="mt-1 text-sm font-medium text-gray/40">{date}</p>
+            </div>
+            <button
+              onClick={() => setShowDetail(false)}
+              className="rounded-full p-2 transition-colors hover:bg-gray/5 dark:hover:bg-dark-700"
+            >
+              <svg
+                className="h-6 w-6 text-gray/50"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
 
-            <div className="modal-content max-h-[88vh] max-w-md overflow-y-auto py-4 px-6 text-left dark:bg-gray-100">
-              <div className="flex items-center justify-between pb-3">
-                <h2 className="mb-3 text-xl font-medium md:text-3xl md:font-bold">
-                  {title}
-                </h2>
-                <div className="modal-close z-50 cursor-pointer">
-                  <svg
-                    className="fill-current text-black"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    onClick={() => setShowDetail(false)}
-                  >
-                    <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-                  </svg>
-                </div>
+          <div className="grid gap-8 lg:grid-cols-2">
+            {!shouldHideImage && (
+              <div className="relative aspect-video overflow-hidden rounded-2xl border border-gray/5 dark:border-dark-700">
+                <Image
+                  src={img}
+                  alt={title}
+                  layout="fill"
+                  objectFit="cover"
+                  className="duration-500 transition-transform hover:scale-105"
+                />
               </div>
+            )}
+            <div className="flex flex-col h-full">
+              <p className="mb-6 text-[15px] leading-relaxed text-gray/70 dark:text-gray-300">
+                {desc}
+              </p>
 
-              <div className="mb-5 flex flex-wrap space-x-2 text-sm font-thin tracking-wider">
-                {date}
-              </div>
-              <div className="flex flex-col">
-                <div className="max-h-full flex-1">
-                  <Image
-                    src={img}
-                    alt={title}
-                    width={400}
-                    height={150}
-                    style={{
-                      width: "400px",
-                      height: "100%",
-                      objectFit: "contain",
-                    }}
-                  />
-                </div>
-                <div>
-                  <div className="my-4 flex justify-evenly space-x-3">
+              <div className="mt-auto space-y-6 border-t border-gray/5 pt-6 dark:border-dark-700">
+                {!companyProject && (
+                  <div>
+                    <h4 className="mb-3 text-xs font-bold uppercase tracking-widest text-gray/40">
+                      Tech Stacks
+                    </h4>
+                    <div className="flex flex-wrap gap-2">
+                      {stacks.map((tech) => (
+                        <span
+                          key={tech}
+                          className="rounded-lg border border-gray/5 bg-gray/5 px-2.5 py-1 text-[12px] font-semibold text-gray/70 dark:border-dark-700 dark:bg-dark-700/50 dark:text-gray-300"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                <div className="flex gap-3">
+                  {hasGithub && (
                     <a
                       target="_blank"
                       rel="noreferrer"
                       href={github}
-                      className="flex items-center space-x-3 rounded-full bg-gray-400 px-4 py-2 text-lg hover:bg-gray-500 dark:bg-gray-100"
+                      className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-gray/5 py-2.5 text-sm font-bold text-gray transition-all hover:bg-gray/10 dark:bg-dark-700 dark:text-gray-100 dark:hover:bg-dark-700/70"
                     >
-                      <AiFillGithub /> <span>Github</span>
+                      <AiFillGithub size={18} />
+                      <span>{isGithubLink ? "Github" : "Project"}</span>
                     </a>
-                    {demo !== "" && (
-                      <a
-                        target="_blank"
-                        rel="noreferrer"
-                        href={demo}
-                        className="flex items-center space-x-3 rounded-full bg-gray-400 px-4 py-2 text-lg hover:bg-gray-500 dark:bg-gray-100"
-                      >
-                        <AiFillProject /> <span>Demo</span>
-                      </a>
-                    )}
-                  </div>
-                  <h3 className="mb-3 font-medium">{desc}</h3>
-
-                  <p className="text-xl font-medium tracking-wide">Stacks</p>
-                  <div className="mt-5 flex flex-wrap space-x-2 text-sm tracking-wider">
-                    {stacks.map((tech) => (
-                      <span
-                        key={tech}
-                        className="rounde-sm my-1 bg-gray-200 px-2 py-1 dark:bg-gray-100"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
+                  )}
+                  {hasDemo && (
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href={demo}
+                      className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-link py-2.5 text-sm font-bold text-white shadow-md shadow-link/20 transition-all hover:opacity-90 dark:shadow-none"
+                    >
+                      <AiFillProject size={18} />
+                      <span>Live Demo</span>
+                    </a>
+                  )}
                 </div>
-              </div>
-              <div className="flex justify-end pt-2">
-                <button
-                  className="rounded-lg bg-indigo-500 p-3 px-4 text-white hover:bg-indigo-400"
-                  onClick={() => setShowDetail(false)}
-                >
-                  Close
-                </button>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  )
+
+  return (
+    <div className="group flex h-full flex-col">
+      {!shouldHideImage && (
+        <div className="relative aspect-video overflow-hidden">
+          <Image
+            src={img}
+            alt={title}
+            className="cursor-pointer object-cover duration-500 transition-transform group-hover:scale-110"
+            onClick={() => setShowDetail(true)}
+            layout="fill"
+          />
+          <div className="pointer-events-none absolute inset-0 bg-dark/5 opacity-0 transition-opacity group-hover:opacity-100" />
+
+          <div className="absolute top-3 left-3 flex flex-wrap gap-2">
+            {featured && (
+              <span className="rounded-md border border-white/20 bg-black/40 px-2 py-1 text-[9px] font-bold uppercase tracking-wider text-white backdrop-blur-md">
+                Featured
+              </span>
+            )}
+            {companyProject && (
+              <span className="rounded-md border border-white/20 bg-black/40 px-2 py-1 text-[9px] font-bold uppercase tracking-wider text-white backdrop-blur-md">
+                Company
+              </span>
+            )}
+          </div>
+        </div>
       )}
+
+      {shouldHideImage && (featured || companyProject) && (
+        <div className="flex gap-2 px-5 pt-5">
+          {featured && (
+            <span className="rounded-md border border-gray/10 bg-gray/5 px-2 py-1 text-[9px] font-bold uppercase tracking-widest text-gray/50 dark:border-dark-700/50 dark:bg-dark-700 dark:text-gray-400">
+              Featured
+            </span>
+          )}
+          {companyProject && (
+            <span className="rounded-md border border-gray/10 bg-gray/5 px-2 py-1 text-[9px] font-bold uppercase tracking-widest text-gray/50 dark:border-dark-700/50 dark:bg-dark-700 dark:text-gray-400">
+              Company Project
+            </span>
+          )}
+        </div>
+      )}
+
+      <div className="flex flex-grow flex-col p-5">
+        <button
+          type="button"
+          onClick={() => setShowDetail(true)}
+          className="text-left transition-colors group-hover:text-link"
+        >
+          <h3 className="truncate text-lg font-bold tracking-tight text-gray dark:text-gray-100">
+            {title}
+          </h3>
+        </button>
+        <p className="mt-1 text-xs font-medium text-gray/40">{date}</p>
+
+        {hasDemo && (
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={demo}
+            className="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-link transition-opacity hover:opacity-80"
+          >
+            Explore Project
+            <svg
+              className="h-3 w-3"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2.5"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              />
+            </svg>
+          </a>
+        )}
+      </div>
+
+      {showDetail && isMounted && createPortal(modal, document.body)}
     </div>
   )
 }

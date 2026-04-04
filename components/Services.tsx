@@ -11,11 +11,18 @@ const ServiceCard: FC<{ service: Service }> = ({
   }
 
   return (
-    <div className="flex items-center space-x-4 p-2 ">
-      <Icon className="text-green h-12 w-12" />
-      <div className="">
-        <h6 className="font-bold">{title}</h6>
-        <p dangerouslySetInnerHTML={createMarkup()} />
+    <div className="flex flex-col space-y-3">
+      <div className="w-fit rounded-xl bg-link/5 p-3 text-link dark:bg-link/10 dark:text-link">
+        <Icon size={28} />
+      </div>
+      <div>
+        <h6 className="mb-1.5 text-lg font-bold tracking-tight text-gray dark:text-gray-100">
+          {title}
+        </h6>
+        <p
+          className="text-[14px] leading-relaxed text-gray/70 dark:text-gray-400"
+          dangerouslySetInnerHTML={createMarkup()}
+        />
       </div>
     </div>
   )
