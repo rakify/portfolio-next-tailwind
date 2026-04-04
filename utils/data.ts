@@ -152,7 +152,7 @@ export const experience = [
   {
     title: "Senior Software Engineer",
     company: "MoveOn Technologies Ltd",
-    link: "https://moveon.global",
+    link: "https://career.moveon.com.bd",
     period: "09/2025 - Present",
     tasks: [
       "Enhancing operational efficiency by automating admin and agent delivery workflows.",
@@ -162,7 +162,7 @@ export const experience = [
   {
     title: "Software Engineer - II",
     company: "MoveOn Technologies Ltd",
-    link: "https://moveon.global",
+    link: "https://career.moveon.com.bd",
     period: "10/2024 - 09/2025",
     tasks: [
       "Maintained a global cross-border e-commerce platform across frontend and backend.",
@@ -172,7 +172,7 @@ export const experience = [
   {
     title: "Software Engineer - I",
     company: "MoveOn Technologies Ltd",
-    link: "https://moveon.global",
+    link: "https://career.moveon.com.bd",
     period: "08/2023 - 10/2024",
     tasks: [
       "Developed a cross-border e-commerce platform for global users across customer, admin, agent, and delivery panels.",
