@@ -23,7 +23,7 @@ const About: NextPage = () => {
         <section className="mb-16">
           <div className="mb-8 flex items-baseline gap-3">
             <span className="font-mono text-xs font-bold text-link opacity-50">
-              // 01
+              {"// 01"}
             </span>
             <h5 className="text-[10px] font-black uppercase tracking-[0.3em] text-gray dark:text-white">
               Brief
@@ -65,7 +65,7 @@ const About: NextPage = () => {
         <section className="flex-grow">
           <div className="mb-10 flex items-baseline gap-3">
             <span className="font-mono text-xs font-bold text-link opacity-50">
-              // 02
+              {"// 02"}
             </span>
             <h5 className="text-[10px] font-black uppercase tracking-[0.3em] text-gray dark:text-white">
               Expertise

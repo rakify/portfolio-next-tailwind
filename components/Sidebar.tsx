@@ -35,7 +35,7 @@ const Sidebar = () => {
           Rakib Miah
         </h3>
         <p className="font-mono mt-1 text-[10px] font-bold uppercase tracking-[0.2em] text-link">
-          // Senior Software Engineer
+          {"// Senior Software Engineer"}
         </p>
       </div>
 
@@ -43,7 +43,7 @@ const Sidebar = () => {
       <div className="mt-10 w-full px-6">
         <div className="mb-4 flex items-center gap-2">
           <span className="font-mono text-[10px] font-bold text-gray/20 dark:text-gray-600">
-            // 01
+            {"// 01"}
           </span>
           <h5 className="text-[9px] font-black uppercase tracking-[0.3em] text-gray/40 dark:text-gray-500">
             Connect
@@ -84,7 +84,7 @@ const Sidebar = () => {
       <div className="mt-8 w-full px-6">
         <div className="mb-4 flex items-center gap-2">
           <span className="font-mono text-[10px] font-bold text-gray/20 dark:text-gray-600">
-            // 02
+            {"// 02"}
           </span>
           <h5 className="text-[9px] font-black uppercase tracking-[0.3em] text-gray/40 dark:text-gray-500">
             Details
@@ -120,7 +120,7 @@ const Sidebar = () => {
       <div className="mt-10 w-full px-6 pb-4">
         <div className="mb-4 flex items-center gap-2">
           <span className="font-mono text-[10px] font-bold text-gray/20 dark:text-gray-600">
-            // 03
+            {"// 03"}
           </span>
           <h5 className="text-[9px] font-black uppercase tracking-[0.3em] text-gray/40 dark:text-gray-500">
             Actions

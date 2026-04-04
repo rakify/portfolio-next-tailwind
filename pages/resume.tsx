@@ -40,7 +40,7 @@ const Resume = () => {
                       {exp.company}
                     </a>
                     <span className="text-gray/30 dark:text-gray-500 font-mono text-[11px]">
-                      // {exp.period}
+                      {"// "}{exp.period}
                     </span>
                   </div>
                   <ul className="mt-4 space-y-2 border-l-2 border-gray/5 pl-5 dark:border-dark-700">
@@ -107,7 +107,7 @@ const Resume = () => {
                     <div>
                       <h5 className="text-[15px] font-extrabold text-gray dark:text-gray-100">{edu.title}</h5>
                       <p className="mt-1 text-sm text-gray/50 dark:text-gray-400">
-                        - {edu.school} <span className="ml-1 font-mono text-[10px] opacity-60">// {edu.period}</span>
+                        - {edu.school} <span className="ml-1 font-mono text-[10px] opacity-60">{"// "}{edu.period}</span>
                       </p>
                     </div>
                     <div className="rounded-md border border-gray/10 bg-gray/5 px-2 py-0.5 text-[10px] font-black tracking-wider text-gray/40 dark:border-dark-700/50 dark:bg-dark-700 dark:text-gray-500 uppercase">

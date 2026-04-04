@@ -14,7 +14,7 @@ const Blogs = () => {
             Writing in progress...
           </h2>
           <p className="text-gray/60 dark:text-gray-400 max-w-md mx-auto leading-relaxed">
-            I'm currently drafting some deep dives into React, Next.js, and backend architecture. 
+            I&apos;m currently drafting some deep dives into React, Next.js, and backend architecture.
             Stay tuned for technical articles and engineering insights.
           </p>
           <div className="mt-8 flex justify-center">
