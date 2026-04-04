@@ -15,10 +15,10 @@ const Sidebar = () => {
     <div className="flex flex-col items-center py-2">
       {/* Profile Section */}
       <div className="group relative flex w-full flex-col items-center pt-6">
-        {/* The "Frame" - shifted slightly down */}
+        {/* The "Frame" */}
         <div className="shadow-inner absolute top-12 h-28 w-28 rounded-full border-4 border-gray/5 bg-gray/5 dark:border-dark-700 dark:bg-dark-700/50" />
 
-        {/* The Image - larger and getting out of the frame */}
+        {/* The Image */}
         <div className="relative z-10 transition-transform duration-500 group-hover:scale-105">
           <Image
             src={pic}
@@ -34,93 +34,112 @@ const Sidebar = () => {
         <h3 className="mt-4 font-jose text-3xl font-bold tracking-tight text-gray dark:text-white">
           Rakib Miah
         </h3>
-        <p className="mt-1 rounded-full bg-gray/5 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-widest text-gray/60 dark:bg-dark-700 dark:text-gray-100">
-          Senior Software Engineer
+        <p className="font-mono mt-1 text-[10px] font-bold uppercase tracking-[0.2em] text-link">
+          // Senior Software Engineer
         </p>
       </div>
 
-      {/* Social Icons */}
-      <div className="my-4 flex w-full items-center justify-center gap-x-6 border-y border-gray/5 py-4 dark:border-dark-700/50">
-        <a
-          href="https://github.com/rakify"
-          target="_blank"
-          rel="noreferrer"
-          className="transform text-gray/40 transition-all hover:-translate-y-1 hover:text-gray dark:text-gray-100 dark:hover:text-white"
-          aria-label="GitHub"
-        >
-          <FaGithubAlt size={22} />
-        </a>
-        <a
-          href="https://linkedin.com/in/rakib-miah"
-          target="_blank"
-          rel="noreferrer"
-          className="transform text-gray/40 transition-all hover:-translate-y-1 hover:text-link dark:text-gray-100 dark:hover:text-link"
-          aria-label="LinkedIn"
-        >
-          <FaLinkedin size={22} />
-        </a>
-        <a
-          href="mailto:irakibm@gmail.com"
-          target="_blank"
-          rel="noreferrer"
-          className="transform text-gray/40 transition-all hover:-translate-y-1 hover:text-danger dark:text-gray-100 dark:hover:text-danger"
-          aria-label="Email"
-        >
-          <MdEmail size={22} />
-        </a>
-      </div>
-
-      {/* Contact Details */}
-      <div className="mx-auto w-fit space-y-2.5 px-2 pb-5 text-[13.5px] font-medium text-gray/70 dark:text-gray-100">
-        <div className="flex items-center gap-3">
-          <FaAddressCard className="shrink-0 opacity-50" />
-          <span className="whitespace-nowrap">Dhaka, Bangladesh</span>
+      {/* 01. Social Icons */}
+      <div className="mt-10 w-full px-6">
+        <div className="mb-4 flex items-center gap-2">
+          <span className="font-mono text-[10px] font-bold text-gray/20 dark:text-gray-600">
+            // 01
+          </span>
+          <h5 className="text-[9px] font-black uppercase tracking-[0.3em] text-gray/40 dark:text-gray-500">
+            Connect
+          </h5>
         </div>
-        <div className="flex items-center gap-3">
-          <MdEmail className="shrink-0 opacity-50" />
+        <div className="flex items-center justify-between rounded-2xl border border-gray/5 bg-gray/5 p-4 dark:border-dark-700/50 dark:bg-dark-700/30">
           <a
-            href="mailto:irakibm@gmail.com"
-            className="whitespace-nowrap transition-colors hover:text-link"
-          >
-            irakibm@gmail.com
-          </a>
-        </div>
-        <div className="flex items-center gap-3">
-          <FaPhone className="shrink-0 opacity-50" />
-          <a
-            href="tel:+8801874557769"
-            className="whitespace-nowrap transition-colors hover:text-link"
-          >
-            01874557769
-          </a>
-        </div>
-        <div className="flex items-center gap-3">
-          <FaAddressCard className="shrink-0 opacity-50" />
-          <a
-            href="https://devrakib.vercel.app"
+            href="https://github.com/rakify"
             target="_blank"
             rel="noreferrer"
-            className="whitespace-nowrap transition-colors hover:text-link"
+            className="text-gray/40 transition-all hover:text-gray dark:text-gray-100 dark:hover:text-white"
+            aria-label="GitHub"
           >
-            devrakib.vercel.app
+            <FaGithubAlt size={20} />
+          </a>
+          <a
+            href="https://linkedin.com/in/rakib-miah"
+            target="_blank"
+            rel="noreferrer"
+            className="text-gray/40 transition-all hover:text-link dark:text-gray-100 dark:hover:text-link"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedin size={20} />
+          </a>
+          <a
+            href="mailto:irakibm@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+            className="text-gray/40 transition-all hover:text-danger dark:text-gray-100 dark:hover:text-danger"
+            aria-label="Email"
+          >
+            <MdEmail size={20} />
           </a>
         </div>
       </div>
 
-      {/* Footer Actions */}
-      <div className="flex w-full flex-col items-center gap-4 border-t border-gray/5 pt-5 dark:border-dark-700/50">
-        <button
-          className="shadow-lg dark:shadow-none flex w-full items-center justify-center gap-2 rounded-xl bg-gray px-6 py-3 text-sm font-bold text-white shadow-gray/20 transition-all hover:bg-gray/90 active:scale-95 dark:bg-white dark:text-dark-200 dark:hover:bg-gray-100"
-          onClick={() =>
-            window.open(
-              "https://drive.google.com/file/d/1CuuvKfLShvz64mWvqpheIcaSAsQ8LP-T/view"
-            )
-          }
-        >
-          <FaDownload />
-          <span>Download Resume</span>
-        </button>
-        <DarkModeToggle />
+      {/* 02. Contact Details */}
+      <div className="mt-8 w-full px-6">
+        <div className="mb-4 flex items-center gap-2">
+          <span className="font-mono text-[10px] font-bold text-gray/20 dark:text-gray-600">
+            // 02
+          </span>
+          <h5 className="text-[9px] font-black uppercase tracking-[0.3em] text-gray/40 dark:text-gray-500">
+            Details
+          </h5>
+        </div>
+        <div className="space-y-3 text-[12.5px] font-medium text-gray/70 dark:text-gray-100">
+          <div className="flex items-center gap-3">
+            <FaAddressCard className="shrink-0 opacity-30" />
+            <span className="whitespace-nowrap">Dhaka, Bangladesh</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <MdEmail className="shrink-0 opacity-30" />
+            <a
+              href="mailto:irakibm@gmail.com"
+              className="whitespace-nowrap transition-colors hover:text-link"
+            >
+              irakibm@gmail.com
+            </a>
+          </div>
+          <div className="flex items-center gap-3">
+            <FaPhone className="shrink-0 opacity-30" />
+            <a
+              href="tel:+8801874557769"
+              className="whitespace-nowrap transition-colors hover:text-link"
+            >
+              01874557769
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* 03. Actions */}
+      <div className="mt-10 w-full px-6 pb-4">
+        <div className="mb-4 flex items-center gap-2">
+          <span className="font-mono text-[10px] font-bold text-gray/20 dark:text-gray-600">
+            // 03
+          </span>
+          <h5 className="text-[9px] font-black uppercase tracking-[0.3em] text-gray/40 dark:text-gray-500">
+            Actions
+          </h5>
+        </div>
+        <div className="flex flex-col items-center gap-4">
+          <button
+            className="shadow-lg dark:shadow-none flex w-full items-center justify-center gap-2 rounded-xl bg-gray px-6 py-3 text-[13px] font-bold text-white shadow-gray/20 transition-all hover:bg-gray/90 active:scale-95 dark:bg-white dark:text-dark-200 dark:hover:bg-gray-100"
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1CuuvKfLShvz64mWvqpheIcaSAsQ8LP-T/view"
+              )
+            }
+          >
+            <FaDownload size={14} />
+            <span>Resume</span>
+          </button>
+          <DarkModeToggle />
+        </div>
       </div>
     </div>
   )
